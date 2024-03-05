@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Godly Items</name>
+		<update version="1.0.0">
+			<file name="Godly-Items.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Godly-Items.xml" />
+		</update>
+	</info>
+    <element name="Moradin's Warhammer of Creation" type="Magic Item" source="Kymal's Elemental Guard" id="ID_KYMAL_PRISM_MAGIC_ITEM_MORADINS_WARHAMMER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
+        <description>
+            <p>+8 Martial Melee Weapon (requires attunement) Unique Divine Item, Mythical</p>
+            <p>Properties: Versatile (8d10 bludgeoning, 8d10 Thunder)</p>
+            <p>Damage: 8d8 bludgeoning, 8d8 Thunder</p>
+            <p>Ground Slam Attack: Melee Weapon Attack: reach 10 ft., 20ft dome. Hit: 10d8+8 bludgeoning damage to all targets within range, and target location becomes difficult terrain.</p>
+            <br></br>
+            <p class="indent"><i><b>Spells</b></i>: This weapon acts as a +8 spell casting focus. You may use the following spells without material components.</p>
+                <ul>
+                    <li><i><b>At will</b></i>: Mending, Repair (1st lv), Thunderous Wave, Holy Weapon, Stone Shape, Thunderous Smite.</li>
+                    <li><i><b>Three times per day</b></i>: Repair (5th lv), Machine Sacrifice, Rolling Thunder (5th lv), Destructive Wave.</li>
+                    <li><i><b>Two times per day</b></i>: Mighty Fortress, Thunder Step (8th lv), Wall of Stone.</li>
+                    <li><i><b>Once per day</b></i>: Regenerate, Earthquake.</li>
+                </ul>
+            <p><i><b>Warhammers abilities and effects</b></i></p>
+            <ul>
+                <li><i><b>Divine Shielding</b></i>: As a Reaction, you tap the Warhammer upon a solid surface in order to conjure a protective wall between a creature you can see within range and its attacker. A faintly glowing wall made of the substance you struck stands within 5 feet of the target for the duration. The shielded figure moves to cover itself, it is granted a +2 to AC. The Shield lasts until the beginning of your next turn.</li>
+                <li><i><b>Creators Touch</b></i>: As an action you can make a melee attack against a solid object, in order to create 5-10 (1d2, 1=5, 2=10) Statues of a mediumheight and build. These statues resemble dwarves bearing their armour and weapons. Each statue is made using whichever material you strike when using thisability, and can be arranged in whichever arrangement you wish upon casting. Each statue has 60hp and lasts until its hp reaches 0. 
+                            Fighter	Brute	Knight	Archer	Berserker</li>
+                <li><i><b>Clockworks gift</b></i>: As a bonus action you can bring all statues or constructs within 30 ft of you to life for 1 minute. These constructs areconsidered Allied to you and will follow your commands.</li>
+                <li><i><b>Gods Strength</b></i>: While attuned to Morodins Warhammer your Strength and Constitution becomes 25 (+7), you also gain proficiency with Strength andConstitution saving throws, if you did not already. 
+                As a reaction you can create a protective tether to one of your allies, strengthening your durability as you endure their pain for up to 1 minute. Select awilling creature within 20ft. For the duration the selected creature gains all of our damage resistances for the duration. Any damage sustained by your selectedcreature is transferred to you instead. The spell ends early if you fall unconscious.</li>
+                <li><i><b>Craft Master</b></i>: When using this hammer during the successful construction of an item, being or equipment, it is automatically considered a MasterWork (+3). When adding intricate art, runes, or glyphs to a created piece you must roll 1d10. On an odd roll whatever you are adding to a finished piece, failsand the piece is destroyed. On an even, your creation gains the desired addition, including spells or glyphs up to 6th lv.</li>
+                <li><i><b>Earth Shaker</b></i>: Each time you perform a Ground Slam attack, you can cause a 20ft long fissure to form in the land. Creatures within 5ft of it mustmake a Dex save DC 16 or fall into the crack. The fissure closes at the beginning of your turn dealing 6d10 bludgeoning damage to all creatures still within it.</li>
+            </ul>
+
+        </description>
+        <!-- LOOK INTO CHANGING DAMAGE -->
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Kymal's Vault</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set> <!-- 25Kg-->
+            <set name="slot">onehand</set>
+            <set name="weapon">Warhammer</set>
+			<set name="type" addition="Warhammer">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+			<set name="enhancement">8</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="8" />
+            <stat name="spellcasting:dc" value="8" />
+            <stat name="strength:score:set" value="25" bonus="base" />
+            <stat name="constitution:score:set" value="25" bonus="base" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+            <!-- At Will -->
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+            <!-- REPAIR SPELL NOT FOUND -->
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" /> 
+			<grant type="Spell" id="ID_KBP_DMBM_SPELL_THUNDEROUS_WAVE" /> 
+			<grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" />
+            <!-- 3 Per Day -->
+			<grant type="Spell" id="ID_KBP_DMC_SPELL_MACHINE_SACRIFICE" />
+			<grant type="Spell" id="ID_KBP_DMEM_SPELL_ROLLING_THUNDER" /> 
+			<grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" />
+            <!-- 2 Times Per Day -->
+			<grant type="Spell" id="ID_XGTE_SPELL_MIGHTY_FORTRESS" />
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" /> 
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" />
+            <!-- 1 Per Day -->
+			<grant type="Spell" id="ID_PHB_SPELL_REGENERATE" />
+			<grant type="Spell" id="ID_PHB_SPELL_EARTHQUAKE" />
+        </rules>
+    </element>
+
+    <element name="Asmodeous' Ruby Rod" type="Magic Item" source="Kymal's Elemental Guard" id="ID_KYMAL_GUAVA_MAGIC_ITEM_ASMODEOUS_ROD">
+        <description>
+            <p>Staff, Simple Melee Weapon. (requires attunement) Unique Divine Item, Mythical</p>
+            <p>Properties: Versatile +8 weapon, +8 Spell focus.</p>
+            <p>Melee Weapon Attack: reach 10 ft., one target. Hit: 8d8 piercing damage.</p>
+            <p>Ranged Weapon Attack: reach 100/600 ft., one target. Hit: 9d8 (+Spell cast mod +8)  fire damage and 5d8 lightning damage to all creatures within 5ft of the target.</p>
+            <br></br>
+            <p class="indent"><i><b>Spells</b></i>: This weapon acts as a +8 spell casting focus. You may use the following spells without material components.</p>
+                <ul>
+                    <li><i><b>At will</b></i>: Charm Person (4th lv), Armor of Agathys (9th lv, 45hp/dmg), Hex (5th lv), Fireball (4th lv), Bane (5th lv), Power Word Kneel, Whispers of Hellfire (4th lv).</li>
+                    <li><i><b>Three times per day</b></i>: Ice storm (5th lv), Chill Touch (Max Lv), Dominate Monster, Bestow Curse (5th lv).</li>
+                    <li><i><b>Two times per day</b></i>: Harm, Hellish Halo, Blood to acid, Blizzard, Vampiric Aura.</li>
+                    <li><i><b>Once per day</b></i>: Greater Seal of Sanctuary (includes Celestial and mortal creatures, only you and allied creatures gain benefits regardless of creature type), Banishment (9th lv), Mass Polymorph.</li>
+                </ul>
+            <p><i><b>While attuned to Asmodeus' Ruby Rod, you gain the following effects:</b></i></p>
+            <ul>
+                <li><i><b>Bard</b></i>; Bardic inspiration dice becomes d20's, all Bardic cantrips are cast at Max lv, the effects of all of your Bardic talents are doubled. You gain Expertise in Persuasion, Deception, and Intimidation.</li>
+                <li><i><b>Warlock</b></i>; You gain 2 additional Warlock Spell slots, Your Hex's are cast as if you have both Maddening and Relentless Invocations, Your Eldritch Blasts are cast as if you have the Agonising, Spear, and Kiss of Mephistopheles Invocations.</li>
+                <li><i><b>Sorcerer</b></i>; Each sorcerer spell you cast is cast as if you have chosen the Empowered, Subtle, and Heightened Metamagics.</li>
+            </ul>
+            <ul>
+                <li><i><b>Bardic Master</b></i>: While attuned to the Ruby Rod of the greatest bard, all saving throws made to resist your bardic charms are to be made at disadvantage.</li>
+                <li><i><b>Frightful Presence</b></i>: Each creature of your choice that is within 120 feet of you and aware of you must succeed on a  Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence.</li>
+                <li><i><b>Loyalty to the Lord</b></i>: As a bonus action, if Asmodeus' rod was ever knocked or taken out of your or his hand, you both can instantly teleport it back into your palm.</li>
+                <li><i><b>Reverie of Nessus</b></i>: As an action, you can encase yourself in a protective barrier which heals you and stops enemies from attacking you. This barrier acts as a globe of invulnerability. The Reverie of Nessus lasts for three rounds, with a different effect for each one:
+                    <br></br>In the 1st round, You are automatically purged of any unwanted spell effects of conditions.
+                    <br></br>In the 2nd round, You are purged of any diseases, poisons, or physical maladies (including lost body parts).
+                    <br></br>In the 3rd round, You are healed to full hit points and feels as though they just rested a full day, regaining spells and class abilities accordingly.
+                    </li>
+                <li><i><b>Discorporation</b></i>: As a bonus action on your turn, You can teleport anywhere within line of sight up to 120 ft and are considered hidden.</li>
+            </ul>
+
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Kymal's Vault</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set> <!-- 25Kg-->
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+			<set name="type" addition="Staff">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+			<set name="enhancement">8</set>
+        </setters>
+        <rules>
+            <stat name="bardic-inspiration:dice" value="20" bonus="bardic inspiration" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD" />
+            <stat name="persuasion:proficiency" value="proficiency" bonus="double" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD" />
+            <stat name="deception:proficiency" value="proficiency" bonus="double" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD" />
+            <stat name="intimidation:proficiency" value="proficiency" bonus="double" requirements="ID_WOTC_PHB_CLASS_BARD|ID_WOTC_PHB_MULTICLASS_BARD" />
+
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST" requirements="ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_Eldritch_Spear" requirements="ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+            <!-- REQUIRES LVL 5 (LOOK INTO OVERRIDE)-->
+            <grant type="Class Feature" id="ID_WOTC_UA20170605_CLASS_FEATURE_ELDRITCH_INVOCATION_KISS_OF_MEPHISTOPHELES" requirements="ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+            <grant type="Class Feature" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_RELENTLESS_HEX" requirements="ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+            <grant type="Class Feature" id="ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_MADDENING_HEX" requirements="ID_WOTC_PHB_CLASS_WARLOCK|ID_WOTC_PHB_MULTICLASS_WARLOCK"/>
+            <stat name="warlock:spellcasting:slots:count" value="2" />
+
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL" requirements="ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL" requirements="ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL" requirements="ID_WOTC_PHB_CLASS_SORCERER|ID_WOTC_PHB_MULTICLASS_SORCERER"/>
+
+            <stat name="spellcasting:attack" value="8" />
+            <stat name="spellcasting:dc" value="8" />
+            <!-- At Will -->
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" /> 
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" />
+			<grant type="Spell" id="ID_KBP_DMHM_SPELL_POWER_WORD_KNEEL" />
+			<grant type="Spell" id="ID_DMSG_GRGR_SPELL_WHISPERS_OF_HELLFIRE" />
+            <!-- 3 Per Day -->
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_MONSTER" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
+            <!-- 2 Times Per Day -->
+			<grant type="Spell" id="ID_PHB_SPELL_HARM" />
+			<grant type="Spell" id="ID_GFP_COFSA_SPELL_HELLISH_HALO" />
+			<grant type="Spell" id="ID_KBP_DMA_SPELL_BLOOD_TO_ACID" />
+			<grant type="Spell" id="ID_KBP_DMEM_SPELL_BLIZZARD" />
+			<grant type="Spell" id="ID_DMSG_GRGR_SPELL_VAMPIRIC_AURA" />
+            <!-- 1 Per Day -->
+			<grant type="Spell" id="ID_KBP_DMAS_SPELL_GREATER_SEAL_OF_SANCTUARY" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MASS_POLYMORPH" />
+        </rules>
+    </element>
+
+    <element name="Dawns Watch" type="Magic Item" source="Kymal's Elemental Guard" id="ID_KYMAL_ANUBIS_MAGIC_ITEM_DAWNS_WATCH">
+        <description>
+            <p>+6 Spell Focus (requires attunement) Unique Divine Item, Mythical</p>
+            <br></br>
+            <p class="indent"><i><b>Spells</b></i>: This timepiece acts as a +6 spell casting focus and holy symbol. You may use the following spells without material components.</p>
+                <ul>
+                    <li><i><b>At will</b></i>: Slow, Déjà Vu, Flame Strike, Expeditious Retreat, Halt (4th lv), Accelerate, Daylight.</li>
+                    <li><i><b>Three times per day</b></i>: Ephemeral Ward (8th lv), Foresight, Time Stop, Wall of Time, Fire Storm, guardian of faith.</li>
+                    <li><i><b>Two times per day</b></i>: Last Rays of the Dying Sun, Move Heavens (9th lv), Sunburst.</li>
+                    <li><i><b>Once per day</b></i>: Time Jump (effects all creatures), Theogenisis (self only), Circle of Devastation. </li>
+                </ul>
+            <p><i><b>Time pieces Abilities and effects:</b></i></p>
+            <ul>
+                <li><i><b>World Master</b></i>: While attuned to the Dawns Watch timepiece you may use it to cast Armageddon once. When you cast the spell in this manner it can be cast over a period of 5 turns. However the spell is cast centred on Self, because of the hastiness of casting it in this manner.</li>
+                <li><i><b>Aspect of the Sun</b></i>: When you cast a cantrip or a spell that deals fire damage, you can deal radiant damage instead of the spell's typical damage.</li>
+                <li><i><b>Bounty of a Hundred Lives</b></i>: You can now attune to up to four, rather than three, magic items at a time. At 15th level, this limit increases to five items.</li>
+                <li><i><b>Gift of Two Minds</b></i>: You can use your action to touch a willing humanoid and allow it to perceive through your senses until the end of its next turn. As long as the creature is on the same plane of existence as you, it can use its action on subsequent turns to maintain this connection, extending the duration until the end of its next turn. While perceiving through your senses, it benefits from any special senses possessed by you, and it is blinded and deafened to its own surroundings.</li>
+                <li><i><b>Corona of Light</b></i>: You can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60-foot radius and dim light 30 feet beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage.</li>
+                <li><i><b>Warding Flare</b></i>: When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this ability.</li>
+                <li><i><b>Time Storm</b></i>: Once per long rest you can call upon all of the power within you in order to cause time to periodically stop. At the start of each turn Roll 5d20, the total will result in the amount of 20ft spheres of stopped time, within half a km radius of you. This effect will stop time for every creature that is not attuned to Dawns Watch, or fails a DC 36 Wisdom saving throw.</li>
+            </ul>
+
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Kymal's Vault</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">misc</set>
+			<set name="type">Misc</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+			<set name="enhancement">8</set>
+        </setters>
+        <rules>
+            <stat name="attunement:max" value="1"/>
+            <stat name="attunement:max" value="1" level="15"/>
+            <stat name="spellcasting:attack" value="6" />
+            <stat name="spellcasting:dc" value="6" />
+            <!-- At Will -->
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" />
+            <!-- Deja Vu -->
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" /> 
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" />
+            <!-- HALT -->
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+			<grant type="Spell" id="ID_KBP_DMTM_SPELL_ACCELERATE" />
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" />
+            <!-- 3 Per Day -->
+            <!-- Ephemeral Ward -->
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+
+			<grant type="Spell" id="ID_PHB_SPELL_FORSIGHT" />
+			<grant type="Spell" id="ID_PHB_SPELL_TIME_STOP" />
+			<grant type="Spell" id="ID_KBP_DMTM_SPELL_WALL_OF_TIME" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_STORM" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" />
+            <!-- 2 Times Per Day -->
+			<grant type="Spell" id="ID_KBP_DMIM_SPELL_LAST_RAYS_OF_THE_DYING_SUN" />
+            <!-- Move Heavens -->
+			<grant type="Spell" id="ID_GFP_COFSA_SPELL_HELLISH_HALO" />
+
+			<grant type="Spell" id="ID_PHB_SPELL_SUNBURST" />
+            <!-- 1 Per Day -->
+			<grant type="Spell" id="ID_KBP_DMC_SPELL_TIME_JUMP" />
+			<grant type="Spell" id="ID_AW_OOTD_SPELL_THEOGENESIS" />
+			<grant type="Spell" id="ID_KBP_DMRM_SPELL_CIRCLE_OF_DEVASTATION" />
+            <!-- Special -->
+			<grant type="Spell" id="ID_GFP_COFSA_SPELL_ARMAGEDDON" />
+        </rules>
+    </element>
+
+    <element name="Dawns Watch" type="Magic Item" source="Kymal's Elemental Guard" id="ID_KYMAL_ANUBIS_MAGIC_ITEM_DAWNS_WATCH">
+        <description>
+            <p>+6 Spell Focus (requires attunement) Unique Divine Item, Mythical</p>
+            <br></br>
+            <p class="indent"><i><b>Spells</b></i>: This timepiece acts as a +6 spell casting focus and holy symbol. You may use the following spells without material components.</p>
+                <ul>
+                    <li><i><b>At will</b></i>: Slow, Déjà Vu, Flame Strike, Expeditious Retreat, Halt (4th lv), Accelerate, Daylight.</li>
+                    <li><i><b>Three times per day</b></i>: Ephemeral Ward (8th lv), Foresight, Time Stop, Wall of Time, Fire Storm, guardian of faith.</li>
+                    <li><i><b>Two times per day</b></i>: Last Rays of the Dying Sun, Move Heavens (9th lv), Sunburst.</li>
+                    <li><i><b>Once per day</b></i>: Time Jump (effects all creatures), Theogenisis (self only), Circle of Devastation. </li>
+                </ul>
+            <p><i><b>Time pieces Abilities and effects:</b></i></p>
+            <ul>
+                <li><i><b>World Master</b></i>: While attuned to the Dawns Watch timepiece you may use it to cast Armageddon once. When you cast the spell in this manner it can be cast over a period of 5 turns. However the spell is cast centred on Self, because of the hastiness of casting it in this manner.</li>
+                <li><i><b>Aspect of the Sun</b></i>: When you cast a cantrip or a spell that deals fire damage, you can deal radiant damage instead of the spell's typical damage.</li>
+                <li><i><b>Bounty of a Hundred Lives</b></i>: You can now attune to up to four, rather than three, magic items at a time. At 15th level, this limit increases to five items.</li>
+                <li><i><b>Gift of Two Minds</b></i>: You can use your action to touch a willing humanoid and allow it to perceive through your senses until the end of its next turn. As long as the creature is on the same plane of existence as you, it can use its action on subsequent turns to maintain this connection, extending the duration until the end of its next turn. While perceiving through your senses, it benefits from any special senses possessed by you, and it is blinded and deafened to its own surroundings.</li>
+                <li><i><b>Corona of Light</b></i>: You can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60-foot radius and dim light 30 feet beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage.</li>
+                <li><i><b>Warding Flare</b></i>: When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this ability.</li>
+                <li><i><b>Time Storm</b></i>: Once per long rest you can call upon all of the power within you in order to cause time to periodically stop. At the start of each turn Roll 5d20, the total will result in the amount of 20ft spheres of stopped time, within half a km radius of you. This effect will stop time for every creature that is not attuned to Dawns Watch, or fails a DC 36 Wisdom saving throw.</li>
+            </ul>
+
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Kymal's Vault</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">misc</set>
+			<set name="type">Misc</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <stat name="attunement:max" value="1"/>
+        </rules>
+    </element>
+</elements>

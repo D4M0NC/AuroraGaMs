@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Wolfkin Race</name>
+		<update version="1.0.0">
+			<file name="Wolfkin-Race.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Wolfkin-Race.xml" />
+		</update>
+	</info>
+    <element name="Wolfkin" type="Race" source="Gods and Mortals" id="ID_GaMs_RACE_Wolfkin">
+        <description>
+            <p>Big, strong, fast and wise, wolfkind are wolf-like humanoids; with wolfen ancestors. Their feet and hands are similar to those of the paws of their wolf ancestors, but their hands have evolved to be able to hold items. They are covered in fur like their lesser kin.</p>
+            <h4>HISTORY</h4>
+            <p>The wolfkind are a race that swore to defend their pack at all costs. Few can remember how they came about but the pack elders say that it was during a time of great turmoil in the world that their kind were brought about. The elders tell stories of great battles, with both victories and defeats, and to these stories the younglings listen most eagerly. The more popular of these stories is that the wolfkind descended from the first of wolf-like therianthropes, though not necessarily lycanthropes. It is a bit murky, as they are not related to the true lycans that are associated with the goddess Selune, but likely perhaps a terrestrial spirit or deity.</p>
+            <h4>SOCIETY</h4>
+            <p>Despite their brutal appearances; they are a people who cherish, and defend the lives of all good creatures as if they were their own. Their society functions similar to a typical society built by humans, however, they only kill another of their kind in ritualistic situations or in self-defense, if their fellow wolfkind has succumbed to evil, or disease.</p>
+            <h4>NAMES</h4>
+            <p>A wolfkind's name is a rite of passage. A special ceremony is held to give a young wolf their name when they are old enough to finally help provide food and protection for the clan. As such, their names are typically unisex.</p>
+            <p><b>Names:</b> Leslas, Ukrim, Ildrun, Daomri, Tusbo, Irvas, Naumdrik, Helgros, Urvas, Nagram</p>
+            <h4>Wolfkin Traits</h4>
+            <p>As an Wolfkin, you have the following racial traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength and Constitution scores increase by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Wolfkind mature to adulthood in their 16, but can live to be up to 400 years.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> With a strong bond to protect their fellow kin, wolfkind tend to lean towards good. Evil wolfkind are rarely heard of.</p>
+            <p class="indent"><strong><em>Size.</em></strong> An average wolfkind stands roughly 6'5" tall, but they are capable of reaching nearly 7 feet in height. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Hunter.</em></strong> You gain proficiency in one of the following skills: Investigation, Nature, or Stealth.</p>
+            <p class="indent"><strong><em>Powerful Jaws.</em></strong> Your sharp teeth make a powerful weapon; as such, you can use your bite to make unarmed strikes. When you hit with it, the strikes deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+            <p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the (Perception) skill.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language of your choice.</p>
+            <p class="indent"><strong><em>Subrace.</em></strong> Based on where your character's origins are closest to, select one of the three subraces below from frost, forest, or mountain</p>
+        </description>
+        <sheet display="false" />
+        <setters>
+			<set name="height" modifier="2d8">5'6"</set>
+			<set name="weight" modifier="2d6">120 lb.</set>
+		</setters>
+        <rules>
+            <stat name="strength" value="1" />
+            <stat name="constitution" value="1" />
+            <stat name="innate speed" value="35" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Hunter" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Powerful_Jaws" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SENSES" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language, Wolfkin" supports="Standard||Exotic" />
+            <select type="Proficiency" name="Skill Proficiency, Hunter" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_STEALTH" />
+            <select type="Sub Race" name="Wolfkin Subrace" supports="ID_GaMs_RACE_Wolfkin" />
+        </rules>
+    </element>
+    <element name="Hunter" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Hunter">
+        <description>
+            <p>You gain proficiency in one of the following skills: Investigation, Nature, or Stealth.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Powerful Jaws" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Powerful_Jaws">
+        <description>
+            <p>Your sharp teeth make a powerful weapon; as such, you can use your bite to make unarmed strikes. When you hit with it, the strikes deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet action="Action">
+            <description>Your sharp teeth make a powerful weapon; as such, you can use your bite to make unarmed strikes. When you hit with it, the strikes deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+        </sheet>
+    </element>
+
+
+    <element name="Frost Wolf" type="Sub Race" source="Gods and Mortals" id="ID_GaMs_SUBRACE_Frost_Wolf">
+        <supports>ID_GaMs_RACE_Wolfkin</supports>
+        <description>
+            <p>A frost wolf wolfkind's fur usually has a light gray or silvery tone to it.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+            <p class="indent"><strong><em>Snowy Fur.</em></strong> You have advantage on Dexterity (Stealth) checks made in snow or icy terrain.</p>
+            <p class="indent"><strong><em>Freezing Howl.</em></strong> As an action, you can unleash a magic-laced howl to debilitate those nearby. Every creature within a 15-foot radius from you must make a Constitution saving throw. The DC for this saving throw equals 8 + your Intelligence, Wisdom or Charisma modifier + your proficiency bonus. On a failed save, the target takes 2d8 cold damage and its speed is halved until the end of its next turn. On a successful save, the target takes half as much damage, and its speed is not affected. This effect increases in damage by 1d8 when you reach 6th level(3d8), 11th level(4d8), and 16th level(5d8). Once you use your freezing howl, you must complete a short or long rest before you can do so again.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Snowy_Fur" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Freezing_Howl" />
+        </rules>
+    </element>
+    <element name="Snowy Fur" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Snowy_Fur">
+        <description>
+            <p>You have advantage on Dexterity (Stealth) checks made in snow or icy terrain.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Dexterity (Stealth) checks made in snow or icy terrain.</description>
+        </sheet>
+    </element>
+    <element name="Freezing Howl" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Freezing_Howl">
+        <description>
+            <p>As an action, you can unleash a magic-laced howl to debilitate those nearby. Every creature within a 15-foot radius from you must make a Constitution saving throw. The DC for this saving throw equals 8 + your Intelligence, Wisdom or Charisma modifier + your proficiency bonus. On a failed save, the target takes 2d8 cold damage and its speed is halved until the end of its next turn. On a successful save, the target takes half as much damage, and its speed is not affected. This effect increases in damage by 1d8 when you reach 6th level(3d8), 11th level(4d8), and 16th level(5d8). Once you use your freezing howl, you must complete a short or long rest before you can do so again.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>As an action, you can unleash a magic-laced howl to debilitate those nearby. Every creature within a 15-foot radius from you must make a Constitution saving throw (DC {{GaMs-freezing-howl:dice:dc}}). On a failed save, the target takes {{GaMs-freezing-howl:dice}}d8 cold damage and its speed is halved until the end of its next turn. On a successful save, the target takes half as much damage, and its speed is not affected.</description>
+        </sheet>
+        <rules>
+            <stat name="GaMs-freezing-howl:dice" value="2" bonus="base"/>
+            <stat name="GaMs-freezing-howl:dice" value="3" bonus="base" level="6"/>
+            <stat name="GaMs-freezing-howl:dice" value="4" bonus="base" level="11"/>
+            <stat name="GaMs-freezing-howl:dice" value="5" bonus="base" level="16"/>
+
+            <select type="Racial Trait" name="Spellcasting Ability (Freezing Howl)" supports="ID_GaMs_RACIAL_TRAIT_Freezing_Howl_INT|ID_GaMs_RACIAL_TRAIT_Freezing_Howl_WIS|ID_GaMs_RACIAL_TRAIT_Freezing_Howl_CHA"/>
+            <stat name="GaMs-freezing-howl:dice:dc" value="8" bonus="base"/>
+			<stat name="GaMs-freezing-howl:dice:dc" value="proficiency" bonus="proficiency"/>
+        </rules>
+    </element>
+    <element name="Intelligence" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Freezing_Howl_INT">
+		<compendium display="false" />
+		<description>As an action, you can unleash a magic-laced howl to debilitate those nearby. Every creature within a 15-foot radius from you must make a Constitution saving throw. The DC for this saving throw equals 8 + your Intelligence modifier + your proficiency bonus. On a failed save, the target takes 2d8 cold damage and its speed is halved until the end of its next turn. On a successful save, the target takes half as much damage, and its speed is not affected. This effect increases in damage by 1d8 when you reach 6th level(3d8), 11th level(4d8), and 16th level(5d8). Once you use your freezing howl, you must complete a short or long rest before you can do so again.</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="GaMs-freezing-howl:dice:dc" value="intelligence:modifier" bonus="ability"/>
+		</rules>
+	</element>
+    <element name="Wisdom" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Freezing_Howl_WIS">
+		<compendium display="false" />
+		<description>As an action, you can unleash a magic-laced howl to debilitate those nearby. Every creature within a 15-foot radius from you must make a Constitution saving throw. The DC for this saving throw equals 8 + your Wisdom modifier + your proficiency bonus. On a failed save, the target takes 2d8 cold damage and its speed is halved until the end of its next turn. On a successful save, the target takes half as much damage, and its speed is not affected. This effect increases in damage by 1d8 when you reach 6th level(3d8), 11th level(4d8), and 16th level(5d8). Once you use your freezing howl, you must complete a short or long rest before you can do so again.</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="GaMs-freezing-howl:dice:dc" value="wisdom:modifier" bonus="ability"/>
+		</rules>
+	</element>
+    <element name="Charisma" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Freezing_Howl_CHA">
+		<compendium display="false" />
+		<description>As an action, you can unleash a magic-laced howl to debilitate those nearby. Every creature within a 15-foot radius from you must make a Constitution saving throw. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. On a failed save, the target takes 2d8 cold damage and its speed is halved until the end of its next turn. On a successful save, the target takes half as much damage, and its speed is not affected. This effect increases in damage by 1d8 when you reach 6th level(3d8), 11th level(4d8), and 16th level(5d8). Once you use your freezing howl, you must complete a short or long rest before you can do so again.</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="GaMs-freezing-howl:dice:dc" value="charisma:modifier" bonus="ability"/>
+		</rules>
+	</element>
+    
+
+    <element name="Forest Wolf" type="Sub Race" source="Gods and Mortals" id="ID_GaMs_SUBRACE_Forest_Wolf">
+        <supports>ID_GaMs_RACE_Wolfkin</supports>
+        <description>
+            <p>Tending to be more lean than the other subraces, forest wolves rely on their dexterous nature more often than not.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+            <p class="indent"><strong><em>Master of the Forest.</em></strong> You have advantage on Wisdom (Survival) checks made in woodland or jungle terrain.</p>
+            <p class="indent"><strong><em>Instinctual Dodge.</em></strong> When you are hit by a weapon attack, as a reaction, you may attempt to dodge out of the way of the attack. Roll a d6 and reduce the damage taken by the amount rolled. This die increases as you gain levels to a d8 at 6th level, a d10 at 11th level, and a d12 at 16th level. You may use this trait a number of times equal to your proficiency bonus and you regain all uses of this trait after you finish a long rest.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="1" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Master_Of_The_Forest" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Instinctual_Dodge" />            
+        </rules>
+    </element>
+    <element name="Master of the Forest" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Master_Of_The_Forest">
+        <description>
+            <p>You have advantage on Wisdom (Survival) checks made in woodland or jungle terrain.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Survival) checks made in woodland or jungle terrain.</description>
+        </sheet>
+    </element>
+    <element name="Instinctual Dodge" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Instinctual_Dodge">
+        <description>
+            <p>When you are hit by a weapon attack, as a reaction, you may attempt to dodge out of the way of the attack. Roll a d6 and reduce the damage taken by the amount rolled. This die increases as you gain levels to a d8 at 6th level, a d10 at 11th level, and a d12 at 16th level. You may use this trait a number of times equal to your proficiency bonus and you regain all uses of this trait after you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+            <description>When you are hit by a weapon attack, as a reaction, you may attempt to dodge out of the way of the attack. Roll a d{{GaMs-instinctual-dodge:dice}} and reduce the damage taken by the amount rolled.</description>
+        </sheet>
+        <rules>
+            <stat name="GaMs-instinctual-dodge:dice" value="6" bonus="base"/>
+            <stat name="GaMs-instinctual-dodge:dice" value="8" bonus="base" level="6"/>
+            <stat name="GaMs-instinctual-dodge:dice" value="10" bonus="base" level="11"/>
+            <stat name="GaMs-instinctual-dodge:dice" value="12" bonus="base" level="16"/>
+        </rules>
+    </element>
+
+
+    <element name="Mountain Wolf" type="Sub Race" source="Gods and Mortals" id="ID_GaMs_SUBRACE_Mountain_Wolf">
+        <supports>ID_GaMs_RACE_Wolfkin</supports>
+        <description>
+            <p>Strong, powerful, well built and have a very high tolerance, mountain wolves are often seen as the leaders.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Mountain Born.</em></strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
+            <p class="indent"><strong><em>Booming Howl.</em></strong> When you take the Attack action on your turn, you can replace one of your attacks with an you unleash a magical howl to debilitate those nearby. The howl can be heard 300 feet away. Every creature within 5 feet of you must make a Strength saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. On a failed save, a creature takes 2d8 thunder damage, and it is knocked back 10 feet from you. The thunder damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. Once you use this ability, you must complete a short or long rest before you can do so again.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Mountain_Born" />
+            <grant type="Racial Trait" id="ID_GaMs_RACIAL_TRAIT_Booming_Howl" />
+        </rules>
+    </element>
+
+    <element name="Mountain Born" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Mountain_Born">
+        <description>
+            <p>You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Booming Howl" type="Racial Trait" source="Gods and Mortals" id="ID_GaMs_RACIAL_TRAIT_Booming_Howl">
+        <description>
+            <p>When you take the Attack action on your turn, you can replace one of your attacks with an you unleash a magical howl to debilitate those nearby. The howl can be heard 300 feet away. Every creature within 5 feet of you must make a Strength saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. On a failed save, a creature takes 2d8 thunder damage, and it is knocked back 10 feet from you. The thunder damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. Once you use this ability, you must complete a short or long rest before you can do so again.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>When you take the Attack action on your turn, you can replace one of your attacks with an you unleash a magical howl to debilitate those nearby. The howl can be heard 300 feet away. Every creature within 5 feet of you must make a Strength saving throw (DC {{GaMs-booming-howl:dc}}). On a failed save, a creature takes {{GaMs-booming-howl:dice}}d8 thunder damage, and it is knocked back 10 feet from you.</description>
+        </sheet>
+        <rules>
+            <stat name="GaMs-booming-howl:dice" value="2" bonus="base"/>
+            <stat name="GaMs-booming-howl:dice" value="3" bonus="base" level="6"/>
+            <stat name="GaMs-booming-howl:dice" value="4" bonus="base" level="11"/>
+            <stat name="GaMs-booming-howl:dice" value="5" bonus="base" level="16"/>
+
+            <stat name="GaMs-booming-howl:dc" value="8" bonus="base"/>
+			<stat name="GaMs-booming-howl:dc" value="proficiency" bonus="proficiency"/>
+            <stat name="GaMs-booming-howl:dc" value="constitution:modifier" bonus="ability"/>
+        </rules>
+    </element>
+
+</elements>

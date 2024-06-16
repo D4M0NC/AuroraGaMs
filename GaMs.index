@@ -2,13 +2,13 @@
 <index>
 	<info>
 		<name>Gods and Mortals</name>
-		<update version="1.0.1">
+		<update version="1.0.3">
 			<file name="GaMs.index" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs.index" />
 		</update>
 	</info>
 	<files>
 		<file name="Wolfkin-Race.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Wolfkin-Race.xml" />
 		<file name="Godly-Items.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Godly-Items.xml" />
-		<file name="Rodericks-Improved-Mage-Armour.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Rodericks-Improved-Mage-Armour.xml" />
+		<file name="Rodericks-Improved-Mage-Armour.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Custom-Spells.xml" />
 	</files>
 </index>

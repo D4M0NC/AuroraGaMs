@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Rodericks Improved Mage Armour</name>
+		<name>Custom Spells</name>
 		<update version="1.0.0">
-			<file name="Rodericks-Improved-Mage-Armour.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Rodericks-Improved-Mage-Armour.xml" />
+			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Custom-Spells.xml" />
 		</update>
 	</info>
 <element name="Roderick’s Improved Mage Armour" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_RODERICKS'S_IMPROVED_MAGE_ARMOR">

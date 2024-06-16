@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rodericks Improved Mage Armour</name>
+		<update version="1.0.0">
+			<file name="Rodericks-Improved-Mage-Armour.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Rodericks-Improved-Mage-Armour.xml" />
+		</update>
+	</info>
+<element name="Roderick’s Improved Mage Armour" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_RODERICKS'S_IMPROVED_MAGE_ARMOR">
+    <supports>Sorcerer, Wizard, Artificer</supports>
+    <description>
+        <p>Provided you aren’t wearing any medium or heavy armour, you create a protective magical force that surrounds you until the spell ends. Your base AC becomes 14 + Intelligence modifier. The spell ends it if the target dons armour or if you dismiss the spell as an action. When casting this spell you can use a reaction to reach out and grant a willing target a + to their AC equal to half of your intelligence mod for 1 minute (10 rounds).</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">1</set>
+        <set name="school">Abjuration</set>
+        <set name="time">1 action</set>
+        <set name="duration">8 hours</set>
+        <set name="range">Touch</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">a piece of cured leather</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+</elements>

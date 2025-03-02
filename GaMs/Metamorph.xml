@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+		<name>Metamorph Class</name>
+		<update version="1.0.0">
+			<file name="Metamorph.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Metamorph.xml" />
+		</update>
+	</info>
     <element name="Metamorph" type="Class" source="Titans and Mortals" id="ID_TAM_CLASS_METAMORPH">
         <description>
             <p>A gnome ascends a cliff face when an earthquake threatens to plummet him to his death; in response, muscle snaps away from his forearm and digs its calcified ends into the rock, providing much-needed purchase.</p>

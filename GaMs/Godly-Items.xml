@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<name>Godly Items</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="Godly-Items.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Godly-Items.xml" />
 		</update>
 	</info>
-    <element name="Moradin's Warhammer of Creation" type="Magic Item" source="Gods and Mortals" id="ID_GaMs_MAGIC_ITEM_MORADINS_WARHAMMER">
+    <element name="Moradin's Warhammer of Creation" type="Magic Item" source="Titans and Mortals" id="ID_GaMs_MAGIC_ITEM_MORADINS_WARHAMMER">
         <supports>ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
         <description>
             <p>+8 Martial Melee Weapon (requires attunement) Unique Divine Item, Mythical</p>
@@ -76,7 +76,7 @@
         </rules>
     </element>
 
-    <element name="Asmodeous' Ruby Rod" type="Magic Item" source="Gods and Mortals" id="ID_GaMs_MAGIC_ITEM_ASMODEOUS_ROD">
+    <element name="Asmodeous' Ruby Rod" type="Magic Item" source="Titans and Mortals" id="ID_GaMs_MAGIC_ITEM_ASMODEOUS_ROD">
         <description>
             <p>Staff, Simple Melee Weapon. (requires attunement) Unique Divine Item, Mythical</p>
             <p>Properties: Versatile +8 weapon, +8 Spell focus.</p>
@@ -170,7 +170,7 @@
         </rules>
     </element>
 
-    <element name="Dawns Watch" type="Magic Item" source="Gods and Mortals" id="ID_GaMs_MAGIC_ITEM_DAWNS_WATCH">
+    <element name="Dawns Watch" type="Magic Item" source="Titans and Mortals" id="ID_GaMs_MAGIC_ITEM_DAWNS_WATCH">
         <description>
             <p>+6 Spell Focus (requires attunement) Unique Divine Item, Mythical</p>
             <br></br>

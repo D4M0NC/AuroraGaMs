@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Titan's and Mortals</name>
+		<update version="1.0.2">
+			<file name="TAMs.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/TAMs.xml" />
+		</update>
+	</info>
+    <element name="Roderick’s Improved Mage Armour" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_RODERICKS'S_IMPROVED_MAGE_ARMOR">
+        <supports>Sorcerer, Wizard, Artificer</supports>
+        <description>
+            <p>Provided you aren’t wearing any medium or heavy armour, you create a protective magical force that surrounds you until the spell ends. Your base AC becomes 14 + Intelligence modifier. The spell ends it if the target dons armour or if you dismiss the spell as an action. When casting this spell you can use a reaction to reach out and grant a willing target a + to their AC equal to half of your intelligence mod for 1 minute (10 rounds).</p>
+        </description>
+        <setters>
+            <set name="keywords" />
+            <set name="level">1</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">8 hours</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of cured leather</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Gustus Caro" type="Weapon" source="Titans and Mortals" id="ID_TaMs_MAGIC_ITEM_GUSTUS_CARO">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+        <p>Gustus Caro has a somewhat stylish deep pinkish coloured serrated blade with a thin fuller recessing into the white gold gilded hilt. The grip is a spongy, off yellowish almost tan in colour piece of something. It's quite easy to grip and seems to soften the force of blows to the user's wrist. The handle is finished with a softly shining polished red stone pommel.</p>
+        <p>When you beat the AC of a target creature by 5 or more Gustus Caro deals 1d6 additional Bleed Damage to the target.</p>
+        <p>Curse: When wielding Gustus Caro the user tastes everything the blade touches. The taste and textures linger within your mouth until the beginning of your next turn.</p>
+        </description>
+        <setters>
+        <set name="category">Weapons</set>
+        <set name="cost" currency="gp">10</set>
+        <set name="type" addition="shortsword">Weapon</set>
+        <set name="weight" lb="2">2 lb.</set>
+        <set name="slot">onehand</set>
+        <set name="damage" type="piercing">1d6</set>
+        </setters>
+    </element>
+</elements>

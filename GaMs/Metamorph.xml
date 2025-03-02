@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Metamorph" type="Class" source="Titans and Mortals" id="ID_TAM_CLASS_METAMORPH">
+        <description>
+            <p>A gnome ascends a cliff face when an earthquake threatens to plummet him to his death; in response, muscle snaps away from his forearm and digs its calcified ends into the rock, providing much-needed purchase.</p>
+            <p class="indent">Verdant green tendrils strangle a disheveled goliath, as these vines tighten their embrace her jaw splits open at the base and shoots out caustic liquid, freeing her once the smoke clears.</p>
+            <p class="indent">The victor of a duel appears clear once the heart of one is pierced, yet as triumph etches itself on one individual’s face, their head quickly ends up rolling along the ground, a secondary heart maintaining the life of the true victor.</p>
+            <p class="indent">All of these are examples of Metamorphs, individuals that through one way or another have gained the ability to change their form as if it were clay, which they use to evolve at the drop of a hat to reverse their position of prey into that of a predator.</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a Metamorph quickly by following these suggestions. First, put your highest ability score in Constitution, followed by Dexterity or Charisma. Second, choose the Outlander background.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an Metamorph, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d12 per Metamorph level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per Metamorph level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armour, Medium armour</li>
+                <li><strong>Weapons:</strong> Simple weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Constitution, Charisma</li>
+                <li><strong>Skills:</strong> Choose three from Acrobatics, Animal Handling, Athletics, Deception, Intimidation, Insight, Investigation, Nature, Perception, Stealth, and Survival</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li><i>(a)</i> scale mail or <i>(b)</i> leather armour</li>
+                <li>any simple melee weapon</li>
+                <li><i>(a)</i> light crossbow and 20 bolts or <i>(b)</i> shortbow and 20 arrows</li>
+                <li><i>(a)</i> a dungeoneer's pack or <i>(b)</i> an explorer's pack</li>
+            </ul>
+            <h5 class="caption">THE METAMORPH</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Active Adaptations</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>3</td><td class="left">Adaptations, Sample Prey</td></tr>
+                <tr><td> 2nd</td><td>4</td><td class="left">Conceal Essence, Metamorphic Niche</td></tr>
+                <tr><td> 3rd</td><td>5</td><td class="left">Meticulous Critic</td></tr>
+                <tr><td> 4th</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 5th</td><td>7</td><td class="left">Extra Attack</td></tr>
+                <tr><td> 6th</td><td>8</td><td class="left">Metamorphic Niche Feature, Expertise</td></tr>
+                <tr><td> 7th</td><td>9</td><td class="left">Swift Reconstruction</td></tr>
+                <tr><td> 8th</td><td>10</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td> 9th</td><td>11</td><td class="left">Adaptive Overload</td></tr>
+                <tr><td>10th</td><td>12</td><td class="left">Enduring Existence</td></tr>
+                <tr><td>11th</td><td>13</td><td class="left">Metamorphic Niche Feature</td></tr>
+                <tr><td>12th</td><td>14</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>13th</td><td>15</td><td class="left">Defiant Psyche</td></tr>
+                <tr><td>14th</td><td>16</td><td class="left">Aggressive Immune System</td></tr>
+                <tr><td>15th</td><td>17</td><td class="left">Metamorphic Niche Feature</td></tr>
+                <tr><td>16th</td><td>18</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>17th</td><td>19</td><td class="left">Pound of Flesh</td></tr>
+                <tr><td>18th</td><td>20</td><td class="left">Self-Sovereignty</td></tr>
+                <tr><td>19th</td><td>21</td><td class="left">Ability Score Improvement</td></tr>
+                <tr><td>20th</td><td>22</td><td class="left">Metamorphic Niche Feature</td></tr>
+            </table>
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_ADAPTATIONS" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_SAMPLEPREY" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_CONCEALESSENCE" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_NICHE" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_METICULOUSCRITIC" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_ASI" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_EXTRAATTACK" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_EXPERTISE" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_SWIFTRECONSTRUCTION" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_ADAPTIVEOVERLOAD" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_ENDURINGEXISTENCE" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_DEFIANTPSYCHE" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_AGGRESSIVEIMMUNESYSTEM" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_POUNDOFFLESH" />
+            <div element="ID_TAM_CLASS_FEATURE_METAMORPH_SELFSOVEREIGNTY" />
+        </description>
+        <setters>
+			<set name="short">A fierce warrior who gains powers from defeated foes</set>
+			<set name="hd">d12</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_TAM_MULTICLASS_METAMORPH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_TAM_MULTICLASS_METAMORPH" />
+			
+            <select type="Proficiency" name="Skill Proficiency (Metamorph)" number="3" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHELETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING" requirements="!ID_TAM_MULTICLASS_METAMORPH" />
+			
+            <grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_ADAPTATIONS" level="1" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_SAMPLEPREY" level="1" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_CONCEALESSENCE" level="2" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_NICHE" level="2" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_METICULOUSCRITIC" level="3" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_ASI" level="4" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_EXTRAATTACK" level="5" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_EXPERTISE" level="6" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_SWIFTRECONSTRUCTION" level="7" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_ADAPTIVEOVERLOAD" level="9" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_ENDURINGEXISTENCE" level="10" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_DEFIANTPSYCHE" level="13" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_AGGRESSIVEIMMUNESYSTEM" level="14" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_POUNDOFFLESH" level="17" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_METAMORPH_SELFSOVEREIGNTY" level="18" />
+		</rules>
+		<multiclass id="ID_TAM_MULTICLASS_METAMORPH">
+			<prerequisite>Strength 13, Charsima 13</prerequisite>
+			<requirements>[str:13],[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">simple weapons, light armour, medium armour</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+    </element>
+    <element name="Adaptations" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_ADAPTATIONS">
+        <description>
+            <p>Beginning at 1st level, you gain the capability to learn aspects of the creatures you fight and defeat, forever incorporating their essence into yours.</p>
+            <p class="indent">Choose 6 Adaptations from the list of Adaptations for which you meet the <strong>Prerequisites</strong>, you now add these 6 to your Dormant Adaptations and may have a number of Active Adaptations up to your limit, this limit increases as you level up per the Active Adaptations column of the Metamorph table. At the end of a short rest, you may swap a number of Active Adaptations equal to your Constitution Modifier for Dormant ones, or swap all of your Active Adaptations at the end of a long rest.</p>
+            <p class="indent">Additionally at the end of a combat encounter for every creature you personally reduced to 0 hit points you may make a Constitution ability check of DC 8 + half of the creatures CR (rounded down), on a success choose an Adaptation for which the <strong>Source</strong> requirements are met by the slain creature and add it to your Dormant Adaptations. The level required in the <strong>Prerequisites</strong> of an Adaptation does not stop you from acquiring it through slaying a creature, it merely stops you from making an Active Adaptation instead of a Dormant one.</p>
+            <p class="indent">Some of your features or Adaptations require your target to make a saving throw to resist the effects. The saving throw DC is calculated as follows:</p>
+            <center>
+				<p><strong>Metamorph save DC</strong> = 8 + your proficiency bonus + your Constitution modifier</p>
+            </center>
+        </description>
+    </element>
+    <element name="Sample Prey" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_SAMPLEPREY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Conceal Essence" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_CONCEALESSENCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Metamorphic Niche" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_NICHE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Meticulous Critic" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_METICULOUSCRITIC">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Metamorph,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Metamorph,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Metamorph,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Metamorph,16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Metamorph,19" level="19" />
+		</rules>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_EXTRAATTACK">
+        <description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+    </element>
+    <element name="Expertise" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_EXPERTISE">
+        <description>
+			<p> At 6th level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Metamorph)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+    </element>
+    <element name="Swift Reconstruction" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_SWIFTRECONSTRUCTION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Adaptive Overload" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_ADAPTIVEOVERLOAD">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Enduring Existence" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_ENDURINGEXISTENCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Defiant Psyche" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_DEFIANTPSYCHE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Aggressive Immune System" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_AGGRESSIVEIMMUNESYSTEM">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Pound of Flesh" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_POUNDOFFLESH">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Self-Sovereignty" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_METAMORPH_SELFSOVEREIGNTY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>

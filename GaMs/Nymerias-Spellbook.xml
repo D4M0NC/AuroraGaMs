@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Nymerias-Spellbook</name>
+		<update version="1.0.2">
+			<file name="Nymerias-Spellbook.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Nymerias-Spellbook.xml" />
+		</update>
+	</info>
+<element name="Wintery Breath" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_WINTERY_BREATH">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>You exhale a small gust of freezing air, filled with tiny shimmering snowflakes. You may chill or freeze a small item, or create a small cloud of snowflakes directly in front of you. If the item contains a liquid, it will be chilled or frozen accordingly. The cloud of snowflakes causes no harm and dissipates quickly.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">0</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 action</set>
+        <set name="duration">Instantaneous</set>
+        <set name="range">5 feet</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent"/>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+<element name="Magic Missle?" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_MAGIC_MISSILE">
+    <supports>Sorcerer, Wizard, Artificer</supports>
+    <description>
+        <p>You create four glowing darts of magical force. The first 3 darts hit a creature of your choice that you can see within range. The forth dart flys off in a random direction. Each dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">1</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 action</set>
+        <set name="duration">Instantaneous (sometimes)</set>
+        <set name="range">60 feet</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent"/>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+<element name="Frozen Javelin" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_FROZEN_JAVELIN">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>You create a 5ft long javelin of ice and hurl it at a target within range. Make a ranged spell attack. On a hit, the target takes 1d10 cold damage. The target must make a Strength saving throw or be knocked prone.</p>
+        <p class="indent">
+            <b>
+                <i>At Higher Levels.</i>
+            </b>
+             When you cast this spell using a spell slot of 2nd level or higher, you increase the cold damage dealt by 1d10 for each slot level above 1st.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">1</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 action</set>
+        <set name="duration">Instantaneous</set>
+        <set name="range">60 feet</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">a frozen splinter of wood</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+<element name="Frost or Heat Cloak" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_FROST_HEAT_CLOAK">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>You surround yourself and 3 other willing creatures in a layer of either cold or warm air. For the spell's duration, the effects of extreme temperatures are lessened.</p>
+        <p class="indent">
+            <b>
+                <i>At Higher Levels.</i>
+            </b>
+             When you cast this spell using a spell slot of 3rd level or higher, the duration increases by one hour for each level above 3rd.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">2</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 action</set>
+        <set name="duration">1 hour</set>
+        <set name="range">20 feet</set>
+        <set name="hasVerbalComponent">false</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">a piece of cloth</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">true</set>
+    </setters>
+</element>
+<element name="Knowingly Glances" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_KNOWINGLY_GLANCES">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>You glance at a creature within range and force them to make a Wisdom saving throw. On a failed save, you gain a general understanding of the target's intentions (if any), their current emotional state and their general disposition (alignment). On a successful save, the spell fails and the target is aware of your attempt to glean knowledge from their mind.</p>
+        <p class="indent">
+            <b>
+                <i>At Higher Levels.</i>
+            </b>
+             When you cast this spell using a spell slot of 2nd level or higher, you gain an additional insight for each spell level above 1st based on the table below:</p>
+             <p>2nd: their class or creature type</p>
+             <p>3rd: their AC</p>
+             <p>4th: their current nummer of hit points</p>
+             <p>5th: their ability scores and weapon/armor/tool proficiencies if applicable</p>
+             <p>6th: their best and worst skill checks and saving throws</p>
+             <p>7th: their damage resistances, vulnerabilities and immunities</p>
+             <p>8th: the maximum level spell the target can cast or their strongest attack/abilitiy</p>
+             <p>9th: their most guarded secrets.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">1</set>
+        <set name="school">Divination</set>
+        <set name="time">1 action</set>
+        <set name="duration">Instantaneous</set>
+        <set name="range">30 feet</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+<element name="Shimmering Shield" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_SHIMMERING_SHIELD">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>A shimmering barrier of elemental magic appears and protects you. The type of magic and thus the effect of the spell depends upon the type of attack and your current form. If you do not currently have a Frost Rite or Baneful Flames form active, you choose the effect.</p>
+        <p>Frost Shield: until the start of your next turn, you gain +5 AC against non-magical melee attacks against you, including against the triggering attack, as a rime of ice magic covers your form.</p>
+        <p>Flame Shield: until the start of your next turn, you gain +5 AC against non-magical ranged attacks against you, including against the triggering attack, as you are surrounded by intense flames.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">1</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 reaction, which you take when you are hit by an attack</set>
+        <set name="duration">1 round</set>
+        <set name="range">Self</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent"/>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+<element name="Flaming Step" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_FLAMING_STEP">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>Your body turns to flame and you leap to an unoccupied location within 30 ft that you can see, or to a location 15 ft above or below your current location, where you then rematerialise. While moving, you ignite any flammable objects not being worn or carried along the path you travel and you do not provoke opportunity attacks.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">2</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 bonus action</set>
+        <set name="duration">Instantaneous</set>
+        <set name="range">Self</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">false</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent"/>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+<element name="Icy Whispers" type="Spell" source="Titans and Mortals" id="ID_TAM_SPELL_ICY_WHISPERS">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+        <p>You whisper a short message of twenty-five words or less to a creature you are familiar with, which is carried by a sliver of frost magic to the target. The creature hears the message in its mind and feels your frigid breath on the back of its neck. The creature recognises you as the sender if it knows you, and can answer in a like manner immediately, with the frost magic returning to you. The spell enables creatures with an Intelligence score of at least 2 to understand the meaning of your message.</p>
+        <p>You can send the message across any distance and even to other planets or planes of existence, but if the target is on a different planet or plane than you, there is a 25 percent chance that the message doesn’t arrive.</p>
+    </description>
+    <setters>
+        <set name="keywords" />
+        <set name="level">3</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 action</set>
+        <set name="duration">1 round</set>
+        <set name="range">Unlimited</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">a droplet of water</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+    </setters>
+</element>
+</elements>

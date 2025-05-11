@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mech Pilot</name>
-		<update version="0.5.0">
+		<update version="0.6.0">
 			<file name="Mech-Pilot.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Mech-Pilot.xml" />
 		</update>
 	</info>
@@ -516,7 +516,7 @@
             <p class="indent">This ability can only be used once per long rest.</p>
         </description>
         <sheet action="Action" usage="{{mech flamethrower:usage}}/Long Rest" alt="Flamethrower">
-            <description>{{mech flamethrower:damage}}d6 + {{intelligence:modifier}} {{mech flamethrower:range}}ft cone</description>
+            <description>DC {{Mech Pilot:DC}} Dexterity Save, on a failed save {{mech flamethrower:damage}}d6 + {{intelligence:modifier}} {{mech flamethrower:range}}ft cone. half as much on a successful save.  The fire spreads around corners and ignites any flammable objects in the area that aren't being worn or carried.</description>
         </sheet>
         <rules>
             <stat name="mech flamethrower:damage" value="3" />
@@ -534,8 +534,8 @@
 			<p>Your flamethrower becomes upgraded to a more sophisticated version: The affected area is increased by 15ft and it deals additional fire damage equal to 1d6 + your Intelligence modifier. This damage increases by one dice at level 11 and level 17.</p>
             <p class="indent">The flamethrower can be used twice per long rest.</p>
         </description>
-        <sheet>
-            <description>If this works I swear</description>
+        <sheet display="false">
+            <description></description>
         </sheet>
         <rules>
             <stat name="mech flamethrower:damage" value="1" />
@@ -559,7 +559,7 @@
             <p class="indent">This damage increases by one dice when you reach 5th level, 11th level and 17th level.</p>
         </description>
         <sheet action="Action" usage="{{mech missiles:count}}/Long Rest">
-            <description>{{mech missiles:damage}}d6 Fire, Range {{mech missiles:range}}/{{mech missiles:longrange}}</description>
+            <description>{{mech missiles:damage}}d6 Fire, Range {{mech missiles:range}}/{{mech missiles:longrange}} all creatures within {{mech missiles:radius}}ft must make a DC {{Mech Pilot:DC}} Dexterity save, taking half as much damage on a successful save, If the creature is further away than normal range they make the save with Advantage</description>
         </sheet>
         <rules>
             <stat name="mech missiles:damage" value="3" />
@@ -584,8 +584,8 @@
             <p><em>Prerequisite: 3rd level, Missiles</em></p>
             <p>Your mech's missiles now have a normal range of 300 ft and a maximum range of 500 ft. The missiles now deal half damage to creatures that succeeded their saving throws.</p>
        </description>
-        <sheet>
-            <description>description</description>
+       <sheet display="false">
+            <description></description>
         </sheet>
         <rules>
             <stat name="mech missiles:range" value="300" bonus="base" />
@@ -600,9 +600,9 @@
         <description>
             <p><em>Prerequisite: 9th level, Missiles</em></p>
             <p>Your mech can now carry double the amount of rockets it could carry before.</p>
-       </description>
-        <sheet>
-            <description>description</description>
+        </description>
+        <sheet display="false">
+            <description></description>
         </sheet>
         <rules>
             <stat name="mech missiles:count" value="mech missiles:count" />
@@ -617,7 +617,7 @@
             <p><em>Prerequisite: 11th level, Missiles</em></p>
             <p>The missile's explosion radius increases by 15 feet and its damage increases by one dice.</p>
        </description>
-        <sheet>
+       <sheet display="false">
             <description>description</description>
         </sheet>
         <rules>
@@ -636,7 +636,7 @@
             <p class="indent">At level 17, the maximum number of missiles that can be shot simultaneously increases to 5.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech can fire up to {{mech missiles:barrage}} missiles at up to {{mech missiles:barrage}} target locations now. Each missile's damage and explosion radius has to be calculated individually.</description>
         </sheet>
         <rules>
             <stat name="mech missiles:barrage" value="3" />
@@ -658,10 +658,15 @@
             <p class="indent">Your poisons ignore resistance to poisons and treat immunity to poisons as resistance.</p>
        </description>
         <sheet action="Action" usage="{{mech poison:usage}}/Long Rest">
-            <description>description</description>
+            <description>expell a cloud of noxious gas in a cone in front of it. This cone's size is equal to {{mech poison:size}}ft. The cloud will persist until the end of your next round. This area becomes heavily obscured. Creatures being in or entering that cloud have to make a DC {{Mech Pilot:DC}} constitution save, On a fail they take 1d12 poison damage and become poisoned for a minute, on a success they take half the damage. This apparatus can expell any substance that can be dispersed through the air. The affected area stays the same.
+
+                Your poisons ignore resistance to poisons and treat immunity to poisons as resistance.</description>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <stat name="mech poison:size" value="5" />
+            <stat name="mech poison:size" value="intelligence:modifier" />
+            <stat name="mech poison:size" value="intelligence:modifier" />
             <stat name="mech poison:usage" value="1" />
             <stat name="mech poison:usage" value="1" level="5" />
             <stat name="mech poison:usage" value="1" level="11" />
@@ -682,7 +687,9 @@
             <p class="indent">Other injury poisons can be used for Poison Tipping too.</p>
        </description>
         <sheet action="Bonus Action" >
-            <description>description</description>
+            <description>Your primary weapons (and Bladed Armor if equipped) are coated in an artificial poison. Creatures, that have been injured by one of these, have to succeed on the poison's Constitution saving throw or suffer its effects. After the poison has been applied (regardless if the creature failed their save or not), the poison will no longer be present on these weapons. It can be replenished as a bonus action.
+
+                The standard poison used for the poison tipping causes an affected creature to take 1d6 poison damage if it fails its Constitution saving throw on a DC of 10 and half this damage (rounded up) on a success.</description>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
@@ -701,8 +708,8 @@
             <p class="indent">At level 5, an additional shock blast is produced. This can hit the same or a different creature or object. Each spell attack has to be rolled independantly. Further shock blasts are produced at levels 11 and 17.</p>
        </description>
         <sheet action="Action" usage="{{intelligence:modifier}}/Long Rest" >
-            <description>description</description>
-            <description level="5">description2</description>
+            <description>As an action, your mech may perform a ranged spell attack to deal lightning damage equal to 1d12 + {{intelligence:modifier}} to one creature or object. Creatures hit are unable to perform reactions until their next turn. (Range: 120 ft)</description>
+            <description level="5">As an action, your mech may perform a ranged spell attack to deal lightning damage equal to 1d12 + {{intelligence:modifier}} to {{mech shock:targets}} creatures or objects. Creatures hit are unable to perform reactions until their next turn. (Range: 120 ft)</description>
         </sheet>
         <rules>
             <stat name="mech shock:targets" value="1" />
@@ -722,8 +729,15 @@
             <p class="indent">This damage also applies to Crushing Grip and its damage increses by one dice at levels 5, 11, 15 and 19.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>You or your mech's first melee attack against a creature deals an additional {{mech claws:attack}}d6 slashing damage.</description>
         </sheet>
+        <rules>
+            <stat name="mech claws:attack" value="1" />
+            <stat name="mech claws:attack" value="1" level="5"/>
+            <stat name="mech claws:attack" value="1" level="11"/>
+            <stat name="mech claws:attack" value="1" level="15"/>
+            <stat name="mech claws:attack" value="1" level="19"/>
+        </rules>
     </element>
 
     <element name="Overload" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_OVERLOAD">
@@ -739,7 +753,7 @@
             <p class="indent">This abilities' damage increases by one dice at levels 11 and 17.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>{{mech overload:damage}}d6+{{intelligence:modifier}} thunder damage to all creatures within a 10 feet radius, Creatures damaged by this will lose concentration on their spells and are not able to cast spells one round after being hit. For up to one minute, this can be recast as an action every consecutive turn after the first one.</description>
         </sheet>
         <rules>
             <stat name="mech overload:damage" value="2" />
@@ -758,7 +772,7 @@
             <p class="indent">Your mech is granted an additional +1 AC for each time this module has been upgraded.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech is granted an additional +1 AC for each time this module has been upgraded.</description>
         </sheet>
         <rules>
             <stat name="ac:misc" value="1" />
@@ -779,7 +793,7 @@
             <p class="indent">This shield can be used once per short or long rest.</p>
        </description>
         <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
-            <description>{{mech shield:ablative:ac}}</description>
+            <description>your Mech deploys strong metal shields to preotect itself from incoming damage, granting it {{mech shield:ablative:ac}} AC for one minute</description>
         </sheet>
         <rules>
             <stat name="mech shield:ablative:ac" value="2" />
@@ -801,7 +815,7 @@
             <p class="indent">This shield can be used once per short or long rest.</p>
        </description>
         <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
-            <description>{{mech shield:absorption:hp}}d10</description>
+            <description>your Mech encases itself in a strong forcefield, granting it temporary hit points equal to {{mech shield:absorption:hp}}d10 + {{intelligence:modifier}} for one hour</description>
         </sheet>
         <rules>
             <stat name="mech shield:absorption:hp" value="1" />
@@ -822,7 +836,7 @@
             <p class="indent">This shield can be used once per short or long rest.</p>
        </description>
         <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
-            <description>description</description>
+            <description>your mech can activate a temporary shield that absorbs the first attack or spell attack it hits. This shield persits until your next round. When this shield gets hit, the attack's damage instead gets divided equally as force damage to all creatures within a 5 feet radius.</description>
         </sheet>
         <rules>
             <stat name="mech shield:usage" value="1" bonus="base" />
@@ -838,8 +852,8 @@
             <p>Your mech can regenerate its shields, allowing you to use your each of your shields twice instead of once each short or long rest.</p>
             <p class="indent">The number of shield activations increases by one at level 11 and 17.</p>
        </description>
-        <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
-            <description>description</description>
+        <sheet display="false">
+            <description></description>
         </sheet>
         <rules>
             <stat name="mech shield:usage" value="1" />
@@ -860,7 +874,7 @@
             <p class="indent">This damage is not applied by the mech's attacks.</p>
        </description>
         <sheet>
-            <description>{{mech bladed armour}} {{ac}}</description>
+            <description>Your mech's armor becomes covered in blades and spikes, causing it to deal 1d4 for each 4 AC above 10 AC as slicing damage to creatures that contact your mech's outer armor platings.</description>
         </sheet>
         <rules>
         </rules>
@@ -877,7 +891,7 @@
             <p class="indent">The hit points that can be regained increse by one dice on levels 11 and 17. The Number of activations per long rest increases by one at level 11 and 17.</p>
        </description>
         <sheet action="Bonus Action" usage="{{mech autorepair}}/Long Rest">
-            <description>{{mech autorepair}}</description>
+            <description>your mech may regain hit points equal to {{mech autorepair}}d6 + {{intelligence:modifier}}</description>
         </sheet>
         <rules>
             <stat name="mech autorepair" value="2" />
@@ -895,7 +909,7 @@
             <p>You can take the Disengage or Hide action as a bonus action on each of your turns. This is usable both while piloting your mech and when outside your mech.</p>
        </description>
         <sheet action="Bonus Action">
-            <description>Hide/Disengage</description>
+            <description>You can take the Disengage or Hide action as a bonus action on each of your turns. This is usable both while piloting your mech and when outside your mech.</description>
         </sheet>
     </element>
 
@@ -909,7 +923,7 @@
             <p class="indent">Any spell or effect you create ignores resistance to elemental damage and treats immunity to elemental damage as resistance. This only applies to your effects on others. If you should be affected by your own effects, your resistances will not be ignored by this effect.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Any spell or effect you create ignores resistance to elemental damage and treats immunity to elemental damage as resistance. This only applies to your effects on others. If you should be affected by your own effects, your resistances will not be ignored by this effect.</description>
         </sheet>
     </element>
 
@@ -924,7 +938,7 @@
             <p class="indent">While overclocked, its speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saves, and it gains an additional action on each of its turns. The action can be used to attack with on-board weapons only, dash, disengage, hide or use an object.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>you may overclock your mech, granting you an additional action with it this turn. Since your mech will overheat, it cannot take any actions or move until after its next turn. While overclocked, its speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saves, and it gains an additional action on each of its turns. The action can be used to attack with on-board weapons only, dash, disengage, hide or use an object.</description>
         </sheet>
     </element>
 
@@ -937,7 +951,7 @@
             <p>You and your mech can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>You and your mech can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
 			<stat name="extra attack:count" value="2" bonus="extra attack" />
@@ -953,7 +967,7 @@
             <p>You and your mech can attack three times, instead of twice, whenever you take the Attack action on your turn.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>You and your mech can attack three times, instead of twice, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
 			<stat name="extra attack:count" value="3" bonus="extra attack" />
@@ -969,7 +983,7 @@
             <p>You and your mech can attack four times, instead of three times, whenever you take the Attack action on your turn.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>You and your mech can attack four times, instead of three times, whenever you take the Attack action on your turn.</description>
         </sheet>
         <rules>
 			<stat name="extra attack:count" value="4" bonus="extra attack" />
@@ -988,7 +1002,7 @@
             <p class="indent">Because of the higher stability and power of these new pistons, your mech now has the ability to jump up to 3 + your intelligence modifier ft high.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech gains an additional 10 ft movement. This also applies when your mech is anchored, which means, its movement then is 10 ft instead of 0. Because of the higher stability and power of these new pistons, your mech now has the ability to jump up to 3 + your intelligence modifier ft high.</description>
         </sheet>
         <rules>
 			<stat name="speed" value="10" bonus="Stronger Pistons" />
@@ -1006,7 +1020,7 @@
             <p class="indent">Difficult terrain does not impose a disadvantage on your mech.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech gains an additional 20 ft movement. This also applies when your mech is anchored, which means, its movement then is 30 ft instead of 10. Your mech can jump triple the distance it could before. Difficult terrain does not impose a disadvantage on your mech.</description>
         </sheet>
         <rules>
 			<stat name="speed" value="20" bonus="Heavy Duty Pistons" />
@@ -1024,7 +1038,7 @@
             <p class="indent">If you choose to target a creature, you have to perform a spell attack. Hit creatures are dealt 1d4 piercing damage.</p>
        </description>
         <sheet action="Action">
-            <description>description</description>
+            <description>Your mech is equipped with a shootable and retractable hook attached to a winch, that can lift the whole mech's weight. it can be shot at a target location up to 60 ft away. You can use your movement to pull in the winch. If you choose to target a creature, you have to perform a spell attack. Hit creatures are dealt 1d4 piercing damage.</description>
         </sheet>
     </element>
 
@@ -1041,7 +1055,7 @@
             <p class="indent">There is no limit to the number of times this can be used.</p>
        </description>
         <sheet action="Action">
-            <description>description</description>
+            <description>your mech may create powerful magnetic fields, allowing it to manipulate and move metal obects up to 30 ft away from the mech. To move a metal object, you have to succeed on a Strength check on a DC that is equal to one tenth of the object's weight in lb. Since its parts are made of metal, detached mech parts may be manipulated by this too.</description>
         </sheet>
     </element>
 
@@ -1055,7 +1069,7 @@
             <p class="indent">Melee attacks with the drill deal piercing damage instead of bludgeoning damage.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>One of your mech's arms is now equipped with a mining drill. Your mech can now move through rock by digging a tunnel around it. While doing so, its digging speed is equal to one third of its movement speed. Melee attacks with the drill deal piercing damage instead of bludgeoning damage.</description>
         </sheet>
     </element>
 
@@ -1069,7 +1083,7 @@
             <p class="indent">The gills can filter air and water, allowing them to always produce fresh, breathable air inside the mech. This can be used to filter atmospheres with poisonous gases or similar.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech is equipped with artificial gills, allowing you to stay under water for an unlimited amount of time. Its speed under water is equal to its speed on land. The gills can filter air and water, allowing them to always produce fresh, breathable air inside the mech. This can be used to filter atmospheres with poisonous gases or similar.</description>
         </sheet>
         <rules>
 			<stat name="speed:swim" value="speed" bonus="base" />
@@ -1086,7 +1100,7 @@
             <p class="indent">Your mech is equipped with a small furnace that can melt metals and allows you to refine pure metals from their ores. As long as the mech's core is intact, it will produce enough energy to run the furnace.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech is equipped with a small furnace that can melt metals and allows you to refine pure metals from their ores. As long as the mech's core is intact, it will produce enough energy to run the furnace.</description>
         </sheet>
         <rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
@@ -1101,7 +1115,7 @@
             <p><em>Prerequisite: 2nd level</em></p>
             <p>Instead of learning things the hard way, you simply implanted a device into the your brain's speech center, granting you knowledge of one language of your choice and proficiency in one Charisma-based skill.</p>
        </description>
-        <sheet>
+        <sheet display="false">
             <description>description</description>
         </sheet>
         <rules>
@@ -1120,7 +1134,7 @@
             <p class="indent">You can use this ability once per long rest.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>you are able to detect magic and traps for 10 minutes. This ability can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</description>
         </sheet>
     </element>
 
@@ -1134,7 +1148,7 @@
             <p class="indent">You gain proficiency in the Insight and Intimidation skills.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>You have developed sensors that allow you to monitor another creature's heartbeat if it is within your melee range, allowing you to monitor changes in heart frequency.</description>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
@@ -1154,7 +1168,7 @@
             <p class="indent">This can be used once per long rest.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>you are able to see through objects up to 30 ft away for 10 minutes. Your view is obstructed by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. This can also be used to see weaknesses or secret doors in walls, objects hidden by creatures and even into the creatures' bodies (including heart rate, muscle movements, breathing and blood circulation in their brains).</description>
         </sheet>
     </element>
 
@@ -1166,8 +1180,8 @@
             <p><em>Prerequisite: 4th level</em></p>
             <p>You have gotten a highly magnifying spyglass, granting you proficiency in the Perception skill.</p>
        </description>
-        <sheet>
-            <description>description</description>
+        <sheet display="false">
+            <description></description>
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -1185,7 +1199,7 @@
             <p class="indent">To build a new mech, you only need four fifth of the needed iron.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>While resting you may restore two hit dice to your mech instead of one. Alternatively, you and your mech may both restore hit points equal to each one of your hit dice. To build a new mech, you only need four fifth of the needed iron.</description>
         </sheet>
     </element>
 
@@ -1197,8 +1211,8 @@
             <p><em>Prerequisite: 2nd level</em></p>
             <p>Since your mech produces a lot of excess heat, you were able to trap a little of it in heating mat, which can also be carried. This grants you resistance to cold, even when outside your mech.</p>
        </description>
-        <sheet>
-            <description>description</description>
+        <sheet display="false">
+            <description></description>
         </sheet>
         <rules>
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
@@ -1215,7 +1229,7 @@
             <p class="indent">To rebuild your mech, an additional pound of lead is needed each time.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech's cockpit is protected by a thin sheet of lead, making you undetectable by magical means (e.g. Detect Thoughts). To rebuild your mech, an additional pound of lead is needed each time.</description>
         </sheet>
     </element>
 
@@ -1229,7 +1243,7 @@
             <p class="indent">This feature can only be used once per long rest.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>If you are in your mech and your hit points become reduced to zero, it instantly stabilizes you and blocks possibly incoming attacks by using all available shields and the block action every turn.</description>
         </sheet>
     </element>
 
@@ -1243,7 +1257,7 @@
             <p class="indent">While controlling your mech remotely, it is considered piloted by you. All features that require you to pilot it can be used while remote controlling.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>You may remote control your mech as long as it is not further away from you than 300 ft and the view is not obstructed. While controlling your mech remotely, it is considered piloted by you. All features that require you to pilot it can be used while remote controlling.</description>
         </sheet>
     </element>
 
@@ -1257,8 +1271,12 @@
             <p class="indent">Your mech's passive perception is equal to 10 + your Intelligence modifier.</p>
        </description>
         <sheet>
-            <description>description</description>
+            <description>Your mech may alarm everyone with loud noises when an unknown creature is closer than 10ft to it. This also works on hardly detectable creatures and when the mech is not piloted. If needed, the alarmed, unpiloted mech can defend itself with melee attacks if it should get attacked or someone tried to break into it. Your Mech's Passive Perception is {{mech pp}}</description>
         </sheet>
+        <rules>
+            <stat name="mech pp" value="10" />
+            <stat name="mech pp" value="intelligence:modifier" />
+        </rules>
     </element>
 
     <element name="Reassembly" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_REASSEMBLY">
@@ -1271,7 +1289,7 @@
             <p class="indent">This feature can only be used once per long rest.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>command your destroyed mech to reassamble into a functioning mech. It picks up all parts that are not further away from the centerpiece as one foot. It gains hit points equal to 1d6 + {{intelligence:modifier}}.</description>
         </sheet>
     </element>
 
@@ -1285,7 +1303,7 @@
             <p class="indent">The thrusters can be used once per turn and once per long rest. The number of uses increases by one at levels 11 and 17.</p>
        </description>
         <sheet action="Action" usage="{{mech thrusters:usage}}/Long Rest">
-            <description>{{mech thrusters:distance}}</description>
+            <description>Your mech gains two thrusters allowing you to dash, as a bonus action, to a target location up to {{mech thrusters:distance}} x 10 ft away. Each creature hit by the dash travels with it. When hitting a wall, each hit creature take fall damage according to the distance they moved this way.</description>
         </sheet>
         <rules>
 			<stat name="mech thrusters:usage" value="1" />
@@ -1305,7 +1323,7 @@
             <p>As long as you are on the same plane of existence as your mech, you may, as an action, call it to your position from any distance. It moves to your position as quickly as possible. If its path is obstructed, it will try to find a way around the obstruction. If the obstruction is unavoidable, it will try to break through it by any means. If this still is not possible, it will stay in front of the obstruction.</p>
        </description>
         <sheet action="Action">
-            <description>description</description>
+            <description>As long as you are on the same plane of existence as your mech, you may, as an action, call it to your position from any distance. It moves to your position as quickly as possible. If its path is obstructed, it will try to find a way around the obstruction. If the obstruction is unavoidable, it will try to break through it by any means. If this still is not possible, it will stay in front of the obstruction.</description>
         </sheet>
     </element>
 
@@ -1320,7 +1338,7 @@
             <p class="indent">This can be used once per long rest.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>You discovered a way to develop vertical thrusters that allow your mech to soar through the air. As an action, your mech lifts off the ground and flies at any height for ten minutes. The mech's flying speed is double its walking speed. When the time of flight runs out, the mech will fall immediatly.</description>
         </sheet>
     </element>
 
@@ -1334,7 +1352,7 @@
             <p class="indent">This feature can be used twice every long rest.</p>
        </description>
         <sheet action="Action" usage="2/Long Rest">
-            <description>description</description>
+            <description>Your mech may, as an action jump between different planes of existence. Everything touching the mech is teleported with it. The places the mech can jump to, have to be seen by you at least once. The distance the mech can travel this way is not limited.</description>
         </sheet>
     </element>
 
@@ -1350,7 +1368,7 @@
             <p class="indent">While controlling, you can decide which memories that creature can keep and which will be overridden by a memory you can make up.</p>
        </description>
         <sheet action="Action" usage="1/Long Rest">
-            <description>description</description>
+            <description>While your mech is on the same plane of existence as you, you may use your action to try to control any creature within 10 feet away from your mech. This creature has to succeed on a Wisdom saving throw or is under your complete control until this mech gets destroyed or you release Mind Control. Only one creature can be controlled at a time by one mech. It can only be recast after releasing it or with another mech. While controlling, you can decide which memories that creature can keep and which will be overridden by a memory you can make up.</description>
         </sheet>
     </element>
 

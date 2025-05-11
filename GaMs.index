@@ -12,5 +12,6 @@
 		<file name="TAMs.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/TAMs.xml" />
 		<file name="Metamorph.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Metamorph.xml" />
 		<file name="Nymerias-Spellbook.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Nymerias-Spellbook.xml" />
+		<file name="Mech-Pilot.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Mech-Pilot.xml" />
 	</files>
 </index>

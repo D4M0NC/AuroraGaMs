@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mech Pilot</name>
+		<update version="0.5.0">
+			<file name="Mech-Pilot.xml" url="https://raw.githubusercontent.com/D4M0NC/AuroraGaMs/master/GaMs/Mech-Pilot.xml" />
+		</update>
+	</info>
+
+
+    <element name="Mech Pilot" type="Class" source="Titans and Mortals" id="ID_TAM_CLASS_MECH">
+        <description>
+            <p>A gnome ascends a cliff face when an earthquake threatens to plummet him to his death; in response, muscle snaps away from his forearm and digs its calcified ends into the rock, providing much-needed purchase.</p>
+            <p class="indent"> </p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a Mech Pilot quickly by following these suggestions: First, Intelligence should be your highest ability score, followed by Dexterity. Second, choose the Urchin background. Third, choose a crossbow and the Explorer's pack.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As a Mech Pilot you gain the following class features:</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d6 per Mech Pilot level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per level after the 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Weapons:</strong> Simple weapons</li>
+                <li><strong>Armor:</strong> Light armour</li>
+                <li><strong>Tools:</strong> Tinker's Tools, Smith's Tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Dexterity</li>
+                <li><strong>Skills:</strong> Choose two from the following: Deception, History, Investigation, Medicine, Nature, Sleight of Hand, Stealth</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li><i>(a)</i> hand axe or <i>(b)</i> dagger or <i>(c)</i> light Crossbow</li>
+                <li><i>(a)</i> dagger or <i>(b)</i> explorer's Pack</li>
+                <li><i>(a)</i> a dungeoneer's pack or <i>(b)</i> an explorer's pack</li>
+                <li>tinker's tools, and 5lb of scrap metal (iron)</li>
+            </ul>
+            <h5 class="caption">THE MECH</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-60 left">Features</td><td class="col-10">Combat Modules</td><td class="col-10" >Utility Modules</td></tr>
+                </thead>
+                <tr><td> 1st</td><td class="left">The Mech, Combat Modules</td><td>1</td><td>0</td></tr>
+                <tr><td> 2nd</td><td class="left">Fighting Style, Utility Modules, Headlights</td><td>1</td><td>1</td></tr>
+                <tr><td> 3rd</td><td class="left">Mechanical Understand</td><td>2</td><td>1</td></tr>
+                <tr><td> 4th</td><td class="left">Ability Score Improvement, Detachable Parts</td><td>2</td><td>2</td></tr>
+                <tr><td> 5th</td><td class="left">Ejection Seat</td><td>3</td><td>2</td></tr>
+                <tr><td> 6th</td><td class="left">Technically Insane</td><td>3</td><td>3</td></tr>
+                <tr><td> 7th</td><td class="left">Upgraded Armour</td><td>4</td><td>3</td></tr>
+                <tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td></tr>
+                <tr><td> 9th</td><td class="left">Self-Destruction</td><td>5</td><td>4</td></tr>
+                <tr><td> 10th</td><td class="left">Excessive Force</td><td>5</td><td>5</td></tr>
+                <tr><td> 11th</td><td class="left">-</td><td>6</td><td>5</td></tr>
+                <tr><td> 12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>6</td></tr>
+                <tr><td> 13th</td><td class="left">-</td><td>7</td><td>6</td></tr>
+                <tr><td> 14th</td><td class="left">Pushing the Boundaries</td><td>7</td><td>7</td></tr>
+                <tr><td> 15th</td><td class="left">Safekeeping</td><td>8</td><td>7</td></tr>
+                <tr><td> 16th</td><td class="left">Ability Score Improvement</td><td>8</td><td>8</td></tr>
+                <tr><td> 17th</td><td class="left">-</td><td>9</td><td>8</td></tr>
+                <tr><td> 18th</td><td class="left">Universal Upgrade</td><td>9</td><td>9</td></tr>
+                <tr><td> 19th</td><td class="left">Ability Score Improvement</td><td>10</td><td>9</td></tr>
+                <tr><td> 20th</td><td class="left">Universal Upgrade, Transcension</td><td>10</td><td>10</td></tr>
+            </table>
+            <div element="ID_TAM_CLASS_FEATURE_MECH_MECH" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_COMBAT_MODULES" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_FIGHTING_STYLE" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_UTILITY_MODULES" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_HEADLIGHTS" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_MECHANICAL_UNDERSTANDING" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_DETACHABLE_PARTS" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_EJECTION_SEAT" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_TECHNICALLY_INSANE" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_UPGRADED_ARMOUR" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_SELF_DESTRUCTION" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_EXCESSIVE_FORCE" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_PUSHING_BOUNDARIES" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_SAFEKEEPING" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_UNIVERSAL_UPGRADE" />
+            <div element="ID_TAM_CLASS_FEATURE_MECH_TRANSCENSION" />
+        </description>
+        <setters>
+			<set name="short">An inventor with a dangerous and versatile exosuit.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_TAM_MULTICLASS_MECH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_TAM_MULTICLASS_MECH" />
+			
+            <select type="Proficiency" name="Skill Proficiency (Mech Pilot)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_TAM_MULTICLASS_MECH" />
+			
+            <grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_MECH" level="1" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_COMBAT_MODULES" level="1" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_UTILITY_MODULES" level="2" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_HEADLIGHTS" level="2" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_MECHANICAL_UNDERSTANDING" level="3" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_ASI" level="4" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_DETACHABLE_PARTS" level="4" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_EJECTION_SEAT" level="5" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_TECHNICALLY_INSANE" level="6" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_UPGRADED_ARMOUR" level="7" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_SELF_DESTRUCTION" level="9" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_EXCESSIVE_FORCE" level="10" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_PUSHING_BOUNDARIES" level="14" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_SAFEKEEPING" level="15" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_UNIVERSAL_UPGRADE" level="18" />
+			<grant type="Class Feature" id="ID_TAM_CLASS_FEATURE_MECH_TRANSCENSION" level="20" />
+
+            <stat name="Mech Pilot:DC" value="8" />
+            <stat name="Mech Pilot:DC" value="intelligence:modifier" />
+            <stat name="Mech Pilot:DC" value="proficiency" />
+            <stat name="Mech Pilot:Attack" value="intelligence:modifier" />
+            <stat name="Mech Pilot:Attack" value="proficiency" />
+		</rules>
+		<multiclass id="ID_TAM_MULTICLASS_MECH">
+			<prerequisite>Intelligence 13, Dexterity 13</prerequisite>
+			<requirements>[dex:13],[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">simple weapons, light armour</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+    </element>
+    <element name="The Mech" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_MECH">
+        <description>
+            <p>At level 1 you have your own self-built mech suit and you are proficient with it.</p>
+            <p class="indent">Your mech suit is treated as a piece of heavy armor, granting you <i>14 AC</i> while piloting it. Its AC cannot be raised by the armor you are wearing. To get into your mech, you may spend your movement to get to and into it and your action to get set up and ready.</p>
+            <p class="indent">Completely erected, your mech is 3 feet taller and up to 2 feet wider than you. Its weight is three times as much as yours. Since it's powered, your mech's weight does not count towards your encumbrance.</p>
+            <p class="indent">Your mech has a base movement of 30. While piloting it, you may add your Intelligence modifier to Strength checks instead of your Strength modifier.</p>
+            <p class="indent">Your mech has separate hit points. While piloting it, it takes damage instead of you (except cold, necrotic, poison and psychic. This damage is dealt to you directly).</p>
+            <p class="indent">When its hit points reach 0, it can no longer be used until it is repaired. If damage exceeds the mech's current hit points, you take the remaining damage. Should your mech be destroyed completely (fallen down a cliff or similar), you can build a new mech within two days. The iron needed for this is equal to your Mech Pilot level times ten. The time needed to build a new mech can be reduced by half for every creature helping you. All mechs have the same modules and properties.</p>
+            <h4 class="caption">Mech Hit Points</h4>
+            <p><strong>Mech's Hit Points at first level:</strong> 6 + your Intelligence modifier</p>
+            <p class="indent"><strong>Mech's Hit Points per level:</strong> 1d6 + your Intelligence modifier</p>
+            <p class="indent">While resting, you may use one of your hit dice to repair your mech regaining it <i>1d6 + your Intelligence modifier</i> hit points, resulting in you not healing because of the exhaustion. Repairing your mech counts as light activity for you, allowing you to keep an eye out for others. When your mech is repaired by magical means (such as mending), consume one hit dice to have it gain that many hit points.</p>
+            <h4 class="caption">Mech Attacks</h4>
+            <p>The mech is equipped with ranged and melee primary weapons. These can be exchanged as any other weapon.</p>
+            <p class="indent">The mech has two arms, each mounted with on-board primary weapons, so Two-Weapon-Fighting is possible beginning at level 1.</p>
+            <p class="indent">Your mech's melee attacks deal bludgeoning damage and its ranged attacks deal piercing damage. Its damage is equal to <i>1d6 + your Dexterity modifier</i></p>
+            <p class="indent">To perform a ranged attack however, you have to be anchored to the ground, allowing you to withstand the immense knockback but also renders you immobile. You can engage or disengage these anchors as a bonus action each turn.</p>
+            <p class="indent">While anchored, your mech has disadvantage on Dexterity saving throws and it is resistant to abilities that cause it to move.</p>
+            <p class="indent"><i>(Range: 80/320)</i></p>
+            <h4 class="caption">Ability Modifiers</h4>
+            <p>Instead of spells, you gain access to abilities that can be treated as spells. Your Spellcasting Modifier is Intelligence.</p>
+            <p class="indent">Some of your features require your target to make a saving throw to resist the feature's effects.</p>
+            <p class="indent">If not stated otherwise, the saving throw DC for your abilities is calculated as follows: <i>8 + your Intelligence modifier + your Proficiency modifier.</i></p>
+            <p class="indent">Other abilities require you to make a spell attack. Your spell attack's roll is a <i>d20 + your Intelligence modifier + your Proficiency modifier.</i></p>
+            <center>
+				<p><strong>Mech Pilot save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Mech Pilot spell attack modifier</strong> = Your proficiency bonus + your Intelligence modifier</p>
+            </center>
+        </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+        </rules>
+
+    </element>
+    <element name="Combat Modules" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_COMBAT_MODULES">
+        <description>
+            <p>Every time you reach an uneven level, you can equip your mech with a new combat module, allowing you to pick one module from the "Combat Modules" list.</p>
+            <p class="indent">Whenever you can add a new combat module to your mech, you can additionally choose and replace an already equipped combat module with an other one.</p>
+        </description>
+        <sheet>
+            <description>These are your combat modules</description>
+        </sheet>
+		<rules>
+			<select type="Class Feature" name="Combat Module (Level 1)" supports="Combat Module" level="1" />
+			<select type="Class Feature" name="Combat Module (Level 3)" supports="Combat Module" level="3" />
+			<select type="Class Feature" name="Combat Module (Level 5)" supports="Combat Module" level="5" />
+			<select type="Class Feature" name="Combat Module (Level 7)" supports="Combat Module" level="7" />
+			<select type="Class Feature" name="Combat Module (Level 9)" supports="Combat Module" level="9" />
+			<select type="Class Feature" name="Combat Module (Level 11)" supports="Combat Module" level="11" />
+			<select type="Class Feature" name="Combat Module (Level 13)" supports="Combat Module" level="13" />
+			<select type="Class Feature" name="Combat Module (Level 15)" supports="Combat Module" level="15" />
+			<select type="Class Feature" name="Combat Module (Level 17)" supports="Combat Module" level="17" />
+			<select type="Class Feature" name="Combat Module (Level 19)" supports="Combat Module" level="19" />
+		</rules>
+    </element>
+    
+    <element name="Utility Modules" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_UTILITY_MODULES">
+        <description>
+            <p>Every time you reach an even level, you can equip your mech with a new utility module, allowing you to pick one module from the "Utility Modules" list.</p>
+            <p class="indent">Whenever you can add a new utility module to your mech, you can additionally choose and replace an already equipped utility module with an other one.</p>
+        </description>
+        <sheet>
+            <description>These are your Utility Modules</description>
+        </sheet>
+		<rules>
+			<select type="Class Feature" name="Utility Module (Level 2)" supports="Utility Module" level="2" />
+			<select type="Class Feature" name="Utility Module (Level 4)" supports="Utility Module" level="4" />
+			<select type="Class Feature" name="Utility Module (Level 6)" supports="Utility Module" level="6" />
+			<select type="Class Feature" name="Utility Module (Level 8)" supports="Utility Module" level="8" />
+			<select type="Class Feature" name="Utility Module (Level 10)" supports="Utility Module" level="10" />
+			<select type="Class Feature" name="Utility Module (Level 12)" supports="Utility Module" level="12" />
+			<select type="Class Feature" name="Utility Module (Level 14)" supports="Utility Module" level="14" />
+			<select type="Class Feature" name="Utility Module (Level 16)" supports="Utility Module" level="16" />
+			<select type="Class Feature" name="Utility Module (Level 18)" supports="Utility Module" level="18" />
+			<select type="Class Feature" name="Utility Module (Level 20)" supports="Utility Module" level="20" />
+		</rules>
+    </element>
+
+    <element name="Fighting Style" type="Class Feature" source="Titans and Mortals"  id="ID_TAM_CLASS_FEATURE_MECH_FIGHTING_STYLE">
+        <description>
+			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>Your mech gains an additionial +1 AC. While wearing armor, you also gain an additional +1 AC.</p>
+            <h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target that is within 5 feet of your mech, you can use your reaction to impose disadvantage on the attack roll. You must be piloting your mech to be able to protect others with it.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>You may add your proficiency bonus to your second attack when Two-Weapon Fighting.</p>
+        </description>
+        <sheet>
+            <description>Fighting Style:</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Mech Pilot Fighting Style" supports="Mech Fighting Styles" />
+        </rules>
+    </element>
+
+    <element name="Headlights" type="Class Feature" source="Titans and Mortals"  id="ID_TAM_CLASS_FEATURE_MECH_HEADLIGHTS">
+        <description>
+            <p>Beginning at level 2, your mech now has two lamps that cast a bright light in a 20ft cone in front of your mech.</p>
+            <p class="indent">These can be detached at will and carried around. Their weight is 2 lb. Each lamp has enough fuel to burn for an hour and can be refilled by connecting it to the mech for one hour at least.</p>
+        </description>
+        <sheet>
+            <description>At Level 2 your mech now has 2 lamps that cast bright light in a 20ft Cones, these can be detached from the mech and carried around, they weigh 2lb and can burn for an hour before needing to be reconnected to the mech for an hour to charge</description>
+        </sheet>
+    </element>
+
+    <element name="Mechanical Understanding" type="Class Feature" source="Titans and Mortals"  id="ID_TAM_CLASS_FEATURE_MECH_MECHANICAL_UNDERSTANDING">
+        <description>
+            <p>By level 3, after tinkering around with your mech for a while now, you became better at understanding different machinery, allowing you to grasp the functions of unknown machines quicker.</p>
+            <p class="indent">Whenever you make an Intelligence (Investigation) check related to machines or constructs, you are considered proficient in the Investigation skill. You can add your Proficiency modifier again if you are already proficient.</p>
+            <p class="indent">You also learned how to transfer enchantments from magical items to your mech. This has to be a magic item that your character is allegible to use. Restrictions (like attunement) still apply. These items have to be destroyed to do this.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make a Investigation check related to machines or construct you are consided proficient in the check, if you are already proficent you can add your proficiency modifier again, You have also learnt how to transfer enchantments from magical items to your mech. Restrictions (such as attunement) still apply, and by transferring the enchantment the magic item is destroyed</description>
+        </sheet>
+    </element>
+
+    <element name="Ability Score Improvement" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement (Level 4)" supports="Improvement Option,Mech Pilot,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement (Level 8)" supports="Improvement Option,Mech Pilot,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement (Level 12)" supports="Improvement Option,Mech Pilot,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement (Level 16)" supports="Improvement Option,Mech Pilot,16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement (Level 19)" supports="Improvement Option,Mech Pilot,19" level="19" />
+		</rules>
+    </element>
+
+    <element name="Detachable Parts" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_DETACHABLE_PARTS">
+        <description>
+            <p>Beginning at level 4, parts of your mech have joints that allow them to be detached and reattached at will. They can be carried and controlled manually. For example, a severed arm can still be used by you to perform an attack.</p>
+        </description>
+        <sheet>
+            <description>You can now detach/reattach parts of your mech and wield them, While being used in this way they still function and can be controlled. For example, a severed arm can still be used by you to perform an attack.</description>
+        </sheet>
+    </element>
+    
+    <element name="Ejection Seat" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_EJECTION_SEAT">
+        <description>
+            <p>Beginning at level 5, you may, as a reaction, bust open your cockpit and catapult you out of your mech. You take fall damage when you hit the ground.</p>
+            <p class="indent">Any attacks or abilities will still hit the mech. If it should get destroyed, you do not take the remaining damage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>As a reaction you may bust open your cockpit and catapult yourself out of your mech, You take fall damage when you hit the ground, Any attacks or abilities will still hit the mech. If it should get destroyed, you do not take the remaining damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Technically Insane" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_TECHNICALLY_INSANE">
+        <description>
+            <p>At level 6, you implanted a small version of your mech's core into yourself, raising your life expectancy by 200 years, reducing the time of sleep you need by half and granting you immunity to disease. Since you have an immense overflow of energy with this core, you can now power small things such as miniaturised modules:</p>
+            <p class="indent">You may choose to implant modules into your living body or create a carriable, smaller version that can also be grafted to light armor. This process will take four hours and cost materials worth 50 gp. For the module to work, you have to succeed on an Intelligence (Investigation) check on a DC of 8 + module level prerequisite. If you fail the check, the module will not work and you take necrotic damage equal to the module's level prerequisite. The time needed to construct a module can be halved by getting help.</p>
+            <p class="indent">The modules you can implant or carry have to have no prerequisites other than level and have to be equipped by your mech. Since these are smaller than the ones for the mech, if they have a limited amount of uses, each of those modules on you can only be used once per long rest.</p>
+        </description>
+        <sheet>
+            <description>You now have a small version of your Mech's core impanted into yourself, Your life expectancy is raised by 200 years, you only need to sleep for half the normal time, and you are now immune to disease. You are also able to power smaller modules, which you may install into yourself, This process will take four hours and cost materials worth 50 gp For the module to work, you have to succeed on an Investigation check on a DC of 8 + module level prerequisite, If you fail the check, the module will not work and you take necrotic damage equal to the module's level prerequisite. The time needed to construct a module can be halved by getting help. The modules you can implant or carry have to have no prerequisites other than level and have to be equipped by your mech. If they have limited uses they are now limited to 1/Long Rest</description>
+        </sheet>
+    </element>
+
+    <element name="Upgraded Armour" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_UPGRADED_ARMOUR">
+        <description>
+            <p>At level 7, your mech's armor gets enhanced. You may choose between:</p>
+            <p class="indent"><strong>Camouflage:</strong> Your mech no longer has disadvantage on stealth checks and is granted advantage on stealth rolls while not moving. This also works on you while not piloting your mech.</p>
+            <p class="indent"><strong>Better Shielding:</strong> Your mech gains +2 AC and you gain +1 AC.</p>
+        </description>
+        <sheet display="false">
+        </sheet>
+		<rules>
+			<select type="Class Feature" name="Upgraded Armour" supports="Mech Upgraded Armour" />
+		</rules>
+    </element>
+
+    <element name="Self-Destruction" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_SELF_DESTRUCTION">
+        <description>
+            <p>Beginning at level 9, your mech can, as a bonus action or reaction, start overloading its core until it releases all of its energy at once, thereby completely destroying itself. Each creature in a radius equal to 10 + your Mech Pilot level in feet, has to make a Dexterity saving throw. Each creature takes fire damage equal to your Mech Pilot level + 3d10 on a failed save and half that amount on a successful one.</p>
+            <p class="indent">The Self-Destruct damage is doubled at level 17.</p>
+        </description>
+        <sheet action="Bonus Action or Reaction">
+            <description>Your mech can start overloading its core, until it releases all the energy at once, Completely destroying itself. Each creature in a radius of {{selfdestruct:range}}ft has to make a DC {{Mech Pilot:DC}} or take {{selfdestruct:amount}}d10 + {{selfdestruct:level}} or half as much on a successful save</description>
+        </sheet>
+		<rules>
+            <stat name="selfdestruct:amount" value="3" />
+            <stat name="selfdestruct:amount" value="3" bonus="double" level="17" />
+            <stat name="selfdestruct:range" value="10" />
+            <stat name="selfdestruct:range" value="level:mech pilot" />
+            <stat name="selfdestruct:level" value="level:mech pilot" />
+            <stat name="selfdestruct:level" value="level:mech pilot" bonus="double" level="17" />
+		</rules>
+    </element>
+
+    <element name="Excessive Force" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_EXCESSIVE_FORCE">
+        <description>
+            <p>Beginning at level 10, your mech gains access to a range-specific ability. Once per short or long rest, your mech may, as an action, perform an attack. If a ranged attack is executed, your mech will use its Railgun, otherwise it will perform a Crushing Grip.</p>
+            <p class="indent">At level 17, this ability can be used two times per short or long rest and its damage is increased by 2d8.</p>
+            <p>Crushing Grip</p>
+            <p class="indent">Your mech may, as an action, perform a melee attack to grab a large or smaller creature in melee range. That creature takes bludgeoning damage equal to 3d8 + your Dexterity modifier is grappled by your mech and makes a Constitution saving Throw. If it fails, this creature additionally is restrained until the end of its next turn</p>
+            <p>Railgun</p>
+            <p class="indent">As an action, command your anchored mech to perform a ranged attack to fire a metal rod with high velocity at a creature up to 600 ft away. That creature takes piercing damage equal to 3d8 + your Dexterity modifier and has to succeed on a Constitution saving throw or is knocked prone. The projectile can penetrate barriers, but 2 feet of rock, 2 inches of any metal or another creature will block it.</p>
+        </description>
+        <sheet action="Action" usage="{{excessiveforce:level}}/Short Rest">
+            <description>Your mech can perform a special attack. either a Crushing Grip (Melee) or a Railgun Shot (Ranged) <strong>Crushing Grip</strong>Make a melee attack on a large or smaller creature in range, They take {{excessiveforce:amount}}d8 + {{dexterity:modifier}} bludgeoning damage and are grappled by your mech, they must then make a DC {{Mech Pilot:DC}} constitution save or be restrained until the end of its next turn.<br></br><strong>Railgun</strong> Make a ranged attack against a creature within 600ft, the creature then takes {{excessiveforce:amount}}d8 + {{dexterity:modifier}} and has to make a DC {{Mech Pilot:DC}} constitution save or be knocked prone. This projectile can penetrate barriors, but is stopped by 2ft of rock, 2 inches of metal or another creature</description>
+        </sheet>
+		<rules>
+            <stat name="excessiveforce:amount" value="3" />
+            <stat name="excessiveforce:amount" value="2" bonus="extra" level="17" />
+            <stat name="excessiveforce:level" value="1" />
+            <stat name="excessiveforce:level" value="1" bonus="double" level="17" />
+		</rules>
+    </element>
+
+    <element name="Pushing The Boundaries" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_PUSHING_BOUNDARIES">
+        <description>
+            <p>At level 14, you altered your body in a way, that allows you to exceed its biological boundaries. You do not have to eat, drink or sleep anymore. Additionally you are immune to disease.</p>
+            <p class="indent">Once per short or long rest, you may add your Intelligence modifier to any non-Intelligence-based roll afterwards.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You may add {{intelligence:modifier}} to any non-Intelligence based roll, In addition you no longer need to eat, drink, or sleep</description>
+        </sheet>
+    </element>
+
+    <element name="Safekeeping" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_SAFEKEEPING">
+        <description>
+            <p>At level 15, you or your mech become resistant to a type of nonphysical damage of your choice.</p>
+        </description>
+        <sheet display="false">
+        </sheet>
+        <rules>
+            <select type="Condition" name="Safekeeping Resistance" supports="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+
+    <element name="Universal Upgrade" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_UNIVERSAL_UPGRADE">
+        <description>
+            <p>At levels 18 and 20, you may pick any module from either of the two lists. These do not count towards the maximum amount of modules your mech can have.</p>
+        </description>
+        <sheet>
+            <description>Extra Modules</description>
+        </sheet>
+        <rules>
+			<select type="Class Feature" name="Universal Upgrade (Level 18)" supports="Utility Module||Combat Module" />
+			<select type="Class Feature" name="Universal Upgrade (Level 20)" supports="Utility Module||Combat Module" level="20"/>
+        </rules>
+    </element>
+
+    <element name="Transcension" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECH_TRANSCENSION">
+        <description>
+            <p>At level 20, your mechanical transformation is complete. You have become one with your machines and delocalised your mind over all of your machines. You can build bionic clones that have all of your characteristics and implants but none of your equipment. Building a clone takes a week andmaterials worth at least 5000 gp.</p>
+            <p class="indent">At will or upon death your soul can be transferred into another bionic clone. The body you left behind will be accessable as long as it was not destroyed. This body can take orders and behaves as any other of your mechs.</p>
+        </description>
+        <sheet>
+            <description>You can build bionic clones that have all of your characteristics and implants but none of your equipment. Building a clone takes a week andmaterials worth at least 5000 gp. At will or upon death your soul can be transferred into another bionic clone. The body you left behind will be accessable as long as it was not destroyed. This body can take orders and behaves as any other of your mechs.</description>
+        </sheet>
+    </element>
+
+
+    
+    <!-- MECH FIGHTING STYLES -->
+    <element name="Defense" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHFIGHTINGSTYLE_DEFENSE">
+        <supports>Mech Fighting Styles</supports>
+        <description>
+			<p>Your mech gains an additionial +1 AC. While wearing armor, you also gain an additional +1 AC.</p>
+        </description>
+        <sheet>
+            <description>Your mech gains an additionial +1 AC. While wearing armor, you also gain an additional +1 AC.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+        </rules>
+    </element>
+
+    <element name="Protection" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHFIGHTINGSTYLE_PROTECTION">
+        <supports>Mech Fighting Styles</supports>
+        <description>
+			<p>When a creature you can see attacks a target that is within 5 feet of your mech, you can use your reaction to impose disadvantage on the attack roll. You must be piloting your mech to be able to protect others with it.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature you can see attacks a target that is within 5 feet of your mech, you can use your reaction to impose disadvantage on the attack roll. You must be piloting your mech to be able to protect others with it.</description>
+        </sheet>
+    </element>
+
+    <element name="Two-Weapon Fighting" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHFIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+        <supports>Mech Fighting Styles</supports>
+        <description>
+			<p>You may add your proficiency bonus to your second attack when Two-Weapon Fighting.</p>
+        </description>
+        <sheet>
+            <description>You may add +{{proficiency}} to your second attack when Two-Weapon Fighting.</description>
+        </sheet>
+    </element>
+
+    <!-- UPGRADED ARMOUR -->
+    <element name="Camouflage" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHENHANCEMENT_CAMOUFLAGE">
+        <supports>Mech Upgraded Armour</supports>
+        <description>
+			<p>Your mech no longer has disadvantage on stealth checks and is granted advantage on stealth rolls while not moving. This also works on you while not piloting your mech.</p>
+        </description>
+        <sheet>
+            <description>Your mech no longer has disadvantage on stealth checks and is granted advantage on stealth rolls while not moving. This also works on you while not piloting your mech.</description>
+        </sheet>
+    </element>
+    <!-- TODO RULES / DESCIPTION -->
+    <element name="Better Shielding" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHENHANCEMENT_BETTER_SHIELDING">
+        <supports>Mech Upgraded Armour</supports>
+        <description>
+			<p>Your mech gains +2 AC and you gain +1 AC.</p>
+        </description>
+        <sheet>
+            <description>Your mech gains +2 AC and you gain +1 AC.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:armoured:misc" value="2" bonus="better shielding" equipped="[armor:any]" />
+        </rules>
+    </element>
+
+    <!-- COMBAT MODULES -->
+
+    <element name="Simple Flamethrower" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_FLAMETHROWER">
+        <supports>Combat Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+			<p>You may, as an action, command your mech to spray burning fuel. Each creature in a 15 ft cone must make a Dexterity saving throw. These creatures take 3d6 fire damage on a failed save and half as mush damage on a successful one. The fire spreads around corners and ignites any flammable objects in the area that aren't being worn or carried.</p>
+            <p class="indent">This ability can only be used once per long rest.</p>
+        </description>
+        <sheet action="Action" usage="{{mech flamethrower:usage}}/Long Rest" alt="Flamethrower">
+            <description>{{mech flamethrower:damage}}d6 + {{intelligence:modifier}} {{mech flamethrower:range}}ft cone</description>
+        </sheet>
+        <rules>
+            <stat name="mech flamethrower:damage" value="3" />
+            <stat name="mech flamethrower:usage" value="1" />
+            <stat name="mech flamethrower:range" value="15" />
+        </rules>
+    </element>
+
+    <element name="Incinerator" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_INCINERATOR">
+        <supports>Combat Module</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5],ID_TAM_CLASS_FEATURE_MECHCOMBAT_FLAMETHROWER</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+			<p>Your flamethrower becomes upgraded to a more sophisticated version: The affected area is increased by 15ft and it deals additional fire damage equal to 1d6 + your Intelligence modifier. This damage increases by one dice at level 11 and level 17.</p>
+            <p class="indent">The flamethrower can be used twice per long rest.</p>
+        </description>
+        <sheet>
+            <description>If this works I swear</description>
+        </sheet>
+        <rules>
+            <stat name="mech flamethrower:damage" value="1" />
+            <stat name="mech flamethrower:damage" value="1" level="11" />
+            <stat name="mech flamethrower:damage" value="1" level="17" />
+            <stat name="mech flamethrower:usage" value="1" />
+            <stat name="mech flamethrower:range" value="15" />
+        </rules>
+    </element>
+
+    <element name="Missiles" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_MISSLES">
+        <supports>Combat Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+			<p>You may, as an action, perform a ranged spell attack to shoot a missile from your on-board rocket launcher at target location. All creatures within 10 ft within that point have to succeed on a Dexterity saving throw or take 3d6 fire damage.</p>
+            <p class="indent">Missiles has to travel at least 15 ft to detonate.</p>
+            <p class="indent">(Range: 120/300)</p>
+            <p class="indent">Creatures that are further away than the normal range have advantage on their saving throws.</p>
+            <p class="indent">This damage increases by one dice when you reach 5th level, 11th level and 17th level.</p>
+        </description>
+        <sheet action="Action" usage="{{mech missiles:count}}/Long Rest">
+            <description>{{mech missiles:damage}}d6 Fire, Range {{mech missiles:range}}/{{mech missiles:longrange}}</description>
+        </sheet>
+        <rules>
+            <stat name="mech missiles:damage" value="3" />
+            <stat name="mech missiles:damage" value="1" level="5" />
+            <stat name="mech missiles:damage" value="1" level="11" />
+            <stat name="mech missiles:damage" value="1" level="17" />
+            <stat name="mech missiles:count" value="2" />
+            <stat name="mech missiles:count" value="1" level="5" />
+            <stat name="mech missiles:count" value="1" level="11" />
+            <stat name="mech missiles:count" value="1" level="17" />
+            <stat name="mech missiles:radius" value="10" />
+            <stat name="mech missiles:range" value="120" bonus="base" />
+            <stat name="mech missiles:longrange" value="300" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Homing Missiles" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_HOMING_MISSLES">
+        <supports>Combat Module</supports>
+		<prerequisite>3rd level, Missiles</prerequisite>
+		<requirements>[level:3],ID_TAM_CLASS_FEATURE_MECHCOMBAT_MISSLES</requirements>
+        <description>
+            <p><em>Prerequisite: 3rd level, Missiles</em></p>
+            <p>Your mech's missiles now have a normal range of 300 ft and a maximum range of 500 ft. The missiles now deal half damage to creatures that succeeded their saving throws.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech missiles:range" value="300" bonus="base" />
+            <stat name="mech missiles:longrange" value="500" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Bigger Missile Storage" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_BIGGER_MISSILE_STORAGE">
+        <supports>Combat Module</supports>
+		<prerequisite>9th level, Missiles</prerequisite>
+		<requirements>[level:9],ID_TAM_CLASS_FEATURE_MECHCOMBAT_MISSLES</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Missiles</em></p>
+            <p>Your mech can now carry double the amount of rockets it could carry before.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech missiles:count" value="mech missiles:count" />
+        </rules>
+    </element>
+
+    <element name="Stronger Explosives" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_STRONGER_EXPLOSIVES">
+        <supports>Combat Module</supports>
+		<prerequisite>11th level, Missiles</prerequisite>
+		<requirements>[level:11],ID_TAM_CLASS_FEATURE_MECHCOMBAT_MISSLES</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level, Missiles</em></p>
+            <p>The missile's explosion radius increases by 15 feet and its damage increases by one dice.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech missiles:damage" value="1" />
+            <stat name="mech missiles:radius" value="15" />
+        </rules>
+    </element>
+
+    <element name="Missile Barrage" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_MISSILE_BARRAGE">
+        <supports>Combat Module</supports>
+		<prerequisite>13th level, Missiles</prerequisite>
+		<requirements>[level:13],ID_TAM_CLASS_FEATURE_MECHCOMBAT_MISSLES</requirements>
+        <description>
+            <p><em>Prerequisite: 13th level, Missiles</em></p>
+            <p>Your mech can fire up to three missiles at up to three target locations now. Each missile's damage and explosion radius has to be calculated individually.</p>
+            <p class="indent">At level 17, the maximum number of missiles that can be shot simultaneously increases to 5.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech missiles:barrage" value="3" />
+            <stat name="mech missiles:barrage" value="2" level="17" />
+        </rules>
+    </element>
+
+    <element name="Poison Gas" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_POISON_GAS">
+        <supports>Combat Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>You are proficient with poisons. Because of your chemical expertise, you were able to assemble a Poisoner's Kit, allowing you to create and replicate potent poisons.</p>
+            <p class="indent">Your mech may, as an action, expell a cloud of noxious gas in a cone in front of it. This cone's size is equal to twice your Intelligence modifier + 5 ft. The cloud will persist until the end of your next round. This area becomes heavily obscured. Creatures being in or entering that cloud have to make a Constitution saving throw. On a fail, they take 1d12 poison damage and become poisoned for one minute. On a success, they take half that damage and are not poisoned.</p>
+            <p class="indent">The poison gas can be used once per long rest.</p>
+            <p class="indent">The number of uses increases by one at level 5, 11 and 17.</p>
+            <p class="indent">This apparatus can expell any substance that can be dispersed through the air. The affected area stays the same.</p>
+            <p class="indent">Your poisons ignore resistance to poisons and treat immunity to poisons as resistance.</p>
+       </description>
+        <sheet action="Action" usage="{{mech poison:usage}}/Long Rest">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+            <stat name="mech poison:usage" value="1" />
+            <stat name="mech poison:usage" value="1" level="5" />
+            <stat name="mech poison:usage" value="1" level="11" />
+            <stat name="mech poison:usage" value="1" level="17" />
+        </rules>
+    </element>
+
+    <element name="Poison Tipping" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_POISON_TIPPING">
+        <supports>Combat Module</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+        <description>
+            <p><em>Prerequisite: 3rd level</em></p>
+            <p>You are proficient with poisons and now possess a poisoner's kit.</p>
+            <p class="indent">Your primary weapons (and Bladed Armor if equipped) are coated in an artificial poison. Creatures, that have been injured by one of these, have to succeed on the poison's Constitution saving throw or suffer its effects.</p>
+            <p class="indent">After the poison has been applied (regardless if the creature failed their save or not), the poison will no longer be present on these weapons. It can be replenished as a bonus action.</p>
+            <p class="indent">The standard poison used for the poison tipping causes an affected creature to take 1d6 poison damage if it fails its Constitution saving throw on a DC of 10 and half this damage (rounded up) on a success.</p>
+            <p class="indent">Other injury poisons can be used for Poison Tipping too.</p>
+       </description>
+        <sheet action="Bonus Action" >
+            <description>description</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+        </rules>
+    </element>
+
+    <element name="Shock Blast" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_SHOCK_BLAST">
+        <supports>Combat Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>As an action, your mech may perform a ranged spell attack to deal lightning damage equal to 1d12 + your Intelligence modifier to one creature or object. Creatures hit are unable to perform reactions until their next turn.</p>
+            <p class="indent">(Range: 120 ft)</p>
+            <p class="indent">The number of times this ability can be used is equal to your Intelligence modifier.</p>
+            <p class="indent">At level 5, an additional shock blast is produced. This can hit the same or a different creature or object. Each spell attack has to be rolled independantly. Further shock blasts are produced at levels 11 and 17.</p>
+       </description>
+        <sheet action="Action" usage="{{intelligence:modifier}}/Long Rest" >
+            <description>description</description>
+            <description level="5">description2</description>
+        </sheet>
+        <rules>
+            <stat name="mech shock:targets" value="1" />
+            <stat name="mech shock:targets" value="1" level="5" />
+            <stat name="mech shock:targets" value="1" level="11" />
+            <stat name="mech shock:targets" value="1" level="17"/>
+        </rules>
+    </element>
+
+    <element name="Attack Claws" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_SHOCK_BLAST">
+        <supports>Combat Module</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+        <description>
+            <p><em>Prerequisite: 3rd level</em></p>
+            <p>You or your mech's first melee attack against a creature deals an additional 1d6 slashing damage.</p>
+            <p class="indent">This damage also applies to Crushing Grip and its damage increses by one dice at levels 5, 11, 15 and 19.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Overload" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_OVERLOAD">
+        <supports>Combat Module</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+        <description>
+            <p><em>Prerequisite: 7th level</em></p>
+            <p>You may cause your mech to emit extremely loud sounds, damaging and inhibiting everyone around it.</p>
+            <p class="indent">As an action, your ech deals 2d6 + your Intelligence modifier thunder damage to all creatures within a 10 feet radius. Creatures damaged by this will lose concentration on their spells and are not able to cast spells one round after being hit.</p>
+            <p class="indent">For up to one minute, this can be recast as an action every consecutive turn after the first one.</p>
+            <p class="indent">This can be used only once per long rest.</p>
+            <p class="indent">This abilities' damage increases by one dice at levels 11 and 17.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech overload:damage" value="2" />
+            <stat name="mech overload:damage" value="1" level="11" />
+            <stat name="mech overload:damage" value="1" level="17" />
+        </rules>
+    </element>
+
+    <element name="Tougher Plating" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_TOUGHER_PLATING">
+        <supports>Combat Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p><strong>This can be chosen multiple times.</strong></p>
+            <p class="indent">Your mech is granted an additional +1 AC for each time this module has been upgraded.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" />
+        </rules>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+    </element>
+
+    <element name="Ablative Shield" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_ABLATIVE_SHIELD">
+        <supports>Combat Module</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+        <description>
+            <p><em>Prerequisite: 3rd level</em></p>
+            <p>As a bonus action, your Mech deploys strong metal shields to preotect itself from incoming damage, granting it +2 AC for one minute.</p>
+            <p class="indent">The AC granted by this shield increase by one AC at levels 5, 11 and 17.</p>
+            <p class="indent">This shield can be used once per short or long rest.</p>
+       </description>
+        <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
+            <description>{{mech shield:ablative:ac}}</description>
+        </sheet>
+        <rules>
+            <stat name="mech shield:ablative:ac" value="2" />
+            <stat name="mech shield:ablative:ac" value="1" level="5" />
+            <stat name="mech shield:ablative:ac" value="1" level="11" />
+            <stat name="mech shield:ablative:ac" value="1" level="17" />
+            <stat name="mech shield:usage" value="1" bonus="base" />
+        </rules>
+    </element>
+    
+    <element name="Absorption Shield" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_ABSORPTION_SHIELD">
+        <supports>Combat Module</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+        <description>
+            <p><em>Prerequisite: 3rd level</em></p>
+            <p>As a bonus action, your Mech encases itself in a strong forcefield, granting it temporary hit points equal to 1d10 + your Intelligence modifier for one hour.</p>
+            <p class="indent">The hit points granted by this shield increase by one dice at levels 5, 11 and 17.</p>
+            <p class="indent">This shield can be used once per short or long rest.</p>
+       </description>
+        <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
+            <description>{{mech shield:absorption:hp}}d10</description>
+        </sheet>
+        <rules>
+            <stat name="mech shield:absorption:hp" value="1" />
+            <stat name="mech shield:absorption:hp" value="1" level="5" />
+            <stat name="mech shield:absorption:hp" value="1" level="11" />
+            <stat name="mech shield:absorption:hp" value="1" level="17" />
+            <stat name="mech shield:usage" value="1" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Burst Shield" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_BURST_SHIELD">
+        <supports>Combat Module</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+        <description>
+            <p><em>Prerequisite: 3rd level</em></p>
+            <p>As a bonus action, your mech can activate a temporary shield that absorbs the first attack or spell attack it hits. This shield persits until your next round. When this shield gets hit, the attack's damage instead gets divided equally as force damage to all creatures within a 5 feet radius.</p>
+            <p class="indent">This shield can be used once per short or long rest.</p>
+       </description>
+        <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech shield:usage" value="1" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Shield Generator" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_SHIELD_GENERATOR">
+        <supports>Combat Module</supports>
+		<prerequisite>5th level, any shield</prerequisite>
+		<requirements>[level:5],(ID_TAM_CLASS_FEATURE_MECHCOMBAT_ABLATIVE_SHIELD||ID_TAM_CLASS_FEATURE_MECHCOMBAT_ABSORPTION_SHIELD||ID_TAM_CLASS_FEATURE_MECHCOMBAT_BURST_SHIELD)</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level, any shield</em></p>
+            <p>Your mech can regenerate its shields, allowing you to use your each of your shields twice instead of once each short or long rest.</p>
+            <p class="indent">The number of shield activations increases by one at level 11 and 17.</p>
+       </description>
+        <sheet action="Bonus Action" usage="{{mech shield:usage}}/Short Rest">
+            <description>description</description>
+        </sheet>
+        <rules>
+            <stat name="mech shield:usage" value="1" />
+            <stat name="mech shield:usage" value="1" level="11" />
+            <stat name="mech shield:usage" value="1" level="17" />
+        </rules>
+    </element>
+
+    <!-- TODO FIND HOW TO CALCULATE? -->
+    <element name="Bladed Armor" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_BLADED_ARMOUR">
+        <supports>Combat Module</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>Your mech's armor becomes covered in blades and spikes, causing it to deal 1d4 for each 4 AC above 10 AC as slicing damage to creatures that contact your mech's outer armor platings.</p>
+            <p class="indent">(For Example: If your mech has an AC of 19, Bladed Armor will deal 2d4 damage.)</p>
+            <p class="indent">This damage is not applied by the mech's attacks.</p>
+       </description>
+        <sheet>
+            <description>{{mech bladed armour}} {{ac}}</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Auto-Repair" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_AUTO_REPAIR">
+        <supports>Combat Module</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+        <description>
+            <p><em>Prerequisite: 7th level</em></p>
+            <p>Your mech can repair itself. As a bonus action, your mech may regain hit points equal to 2d6 + your Intelligence modifier.</p>
+            <p class="indent">This can be used twice per long rest.</p>
+            <p class="indent">The hit points that can be regained increse by one dice on levels 11 and 17. The Number of activations per long rest increases by one at level 11 and 17.</p>
+       </description>
+        <sheet action="Bonus Action" usage="{{mech autorepair}}/Long Rest">
+            <description>{{mech autorepair}}</description>
+        </sheet>
+        <rules>
+            <stat name="mech autorepair" value="2" />
+            <stat name="mech autorepair" value="1" level="11" />
+            <stat name="mech autorepair" value="1" level="17" />
+        </rules>
+    </element>
+
+    <element name="Active Camouflage" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_ACTIVE_CAMOUFLAGE">
+        <supports>Combat Module</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+        <description>
+            <p><em>Prerequisite: 7th level</em></p>
+            <p>You can take the Disengage or Hide action as a bonus action on each of your turns. This is usable both while piloting your mech and when outside your mech.</p>
+       </description>
+        <sheet action="Bonus Action">
+            <description>Hide/Disengage</description>
+        </sheet>
+    </element>
+
+    <element name="Adaptive Offenses" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_ADAPTIVE_OFFENSES">
+        <supports>Combat Module</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level</em></p>
+            <p>Because of your immense expertise with weaponry, you were able to modify your weapons and bypass immunity and resistance.</p>
+            <p class="indent">Any spell or effect you create ignores resistance to elemental damage and treats immunity to elemental damage as resistance. This only applies to your effects on others. If you should be affected by your own effects, your resistances will not be ignored by this effect.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Energy Surge" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_ENERGY_SURGE">
+        <supports>Combat Module</supports>
+		<prerequisite>11th level</prerequisite>
+		<requirements>[level:11]</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>Once per long rest, you may overclock your mech, granting you an additional action with it this turn.</p>
+            <p class="indent">Since your mech will overheat, it cannot take any actions or move until after its next turn.</p>
+            <p class="indent">While overclocked, its speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saves, and it gains an additional action on each of its turns. The action can be used to attack with on-board weapons only, dash, disengage, hide or use an object.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="First Extra Attack" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_EXTRA_ATTACK_1">
+        <supports>Combat Module</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You and your mech can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+        </rules>
+    </element>
+
+    <element name="Second Extra Attack" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_EXTRA_ATTACK_2">
+        <supports>Combat Module</supports>
+		<prerequisite>11th level, First Extra Attack</prerequisite>
+		<requirements>[level:11],ID_TAM_CLASS_FEATURE_MECHCOMBAT_EXTRA_ATTACK_1</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level, First Extra Attack</em></p>
+            <p>You and your mech can attack three times, instead of twice, whenever you take the Attack action on your turn.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="3" bonus="extra attack" />
+        </rules>
+    </element>
+
+    <element name="Third Extra Attack" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHCOMBAT_EXTRA_ATTACK_3">
+        <supports>Combat Module</supports>
+		<prerequisite>20th level, Second Extra Attack</prerequisite>
+		<requirements>[level:20],ID_TAM_CLASS_FEATURE_MECHCOMBAT_EXTRA_ATTACK_2</requirements>
+        <description>
+            <p><em>Prerequisite: 20th level, Second Extra Attack</em></p>
+            <p>You and your mech can attack four times, instead of three times, whenever you take the Attack action on your turn.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<stat name="extra attack:count" value="4" bonus="extra attack" />
+        </rules>
+    </element>
+
+    <!-- UTILITY MODULES -->
+
+    <element name="Stronger Pistons" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_STRONGER_PISTONS">
+        <supports>Utility Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>Your mech gains an additional 10 ft movement. This also applies when your mech is anchored, which means, its movement then is 10 ft instead of 0.</p>
+            <p class="indent">Because of the higher stability and power of these new pistons, your mech now has the ability to jump up to 3 + your intelligence modifier ft high.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<stat name="speed" value="10" bonus="Stronger Pistons" />
+        </rules>
+    </element>
+
+    <element name="Heavy Duty Pistons" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_HEAVY_DUTY_PISTONS">
+        <supports>Utility Module</supports>
+		<prerequisite>4th level, Stronger Pistons</prerequisite>
+		<requirements>[level:4], ID_TAM_CLASS_FEATURE_MECHUTILITY_STRONGER_PISTONS</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level, Stronger Pistons</em></p>
+            <p>Your mech gains an additional 20 ft movement. This also applies when your mech is anchored, which means, its movement then is 30 ft instead of 10.</p>
+            <p class="indent">Your mech can jump triple the distance it could before.</p>
+            <p class="indent">Difficult terrain does not impose a disadvantage on your mech.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<stat name="speed" value="20" bonus="Heavy Duty Pistons" />
+        </rules>
+    </element>
+
+    <element name="Grappling Hook" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_GRAPPLING_HOOK">
+        <supports>Utility Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>Your mech is equipped with a shootable and retractable hook attached to a winch, that can lift the whole mech's weight.</p>
+            <p class="indent">As an action, it can be shot at a target location up to 60 ft away. You can use your movement to pull in the winch.</p>
+            <p class="indent">If you choose to target a creature, you have to perform a spell attack. Hit creatures are dealt 1d4 piercing damage.</p>
+       </description>
+        <sheet action="Action">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Magnetic Field Generator" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_MAGNETIC_FIELD">
+        <supports>Utility Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>As an action, your mech may create powerful magnetic fields, allowing it to manipulate and move metal obects up to 30 ft away from the mech.</p>
+            <p class="indent">To move a metal object, you have to succeed on a Strength check on a DC that is equal to one tenth of the object's weight in lb.</p>
+            <p class="indent">If the object is carried, you have to succeed on a Strength check against that creature.</p>
+            <p class="indent">Since its parts are made of metal, detached mech parts may be manipulated by this too.</p>
+            <p class="indent">There is no limit to the number of times this can be used.</p>
+       </description>
+        <sheet action="Action">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Mining Drills" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_MINING_DRILLS">
+        <supports>Utility Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>One of your mech's arms is now equipped with a mining drill. Your mech can now move through rock by digging a tunnel around it. While doing so, its digging speed is equal to one third of its movement speed.</p>
+            <p class="indent">Melee attacks with the drill deal piercing damage instead of bludgeoning damage.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Artificial Gills" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_ARTIFICIAL_GILLS">
+        <supports>Utility Module</supports>
+		<prerequisite>4th level</prerequisite>
+		<requirements>[level:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p>Your mech is equipped with artificial gills, allowing you to stay under water for an unlimited amount of time. Its speed under water is equal to its speed on land.</p>
+            <p class="indent">The gills can filter air and water, allowing them to always produce fresh, breathable air inside the mech. This can be used to filter atmospheres with poisonous gases or similar.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Smelting Station" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_SMELTING_STATION">
+        <supports>Utility Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>You get Smithing Tools and become proficient with them.</p>
+            <p class="indent">Your mech is equipped with a small furnace that can melt metals and allows you to refine pure metals from their ores. As long as the mech's core is intact, it will produce enough energy to run the furnace.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+        </rules>
+    </element>
+
+    <element name="Automated Learning" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_AUTOMATED_LEARNING">
+        <supports>Utility Module</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:2]</requirements>
+        <description>
+            <p><em>Prerequisite: 2nd level</em></p>
+            <p>Instead of learning things the hard way, you simply implanted a device into the your brain's speech center, granting you knowledge of one language of your choice and proficiency in one Charisma-based skill.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+			<select type="Language" name="Language (Automated Learning)" supports="Standard||Exotic" />
+            <select type="Proficiency" name="Skill Proficiency (Automated Learning)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+
+    <element name="Electro-Magnetic Sensitivity" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_EM_SENSITIVITY">
+        <supports>Utility Module</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:2]</requirements>
+        <description>
+            <p><em>Prerequisite: 2nd level</em></p>
+            <p>You have been able to invent a machine that can detect magic. By using your action, you are able to detect magic and traps for 10 minutes. This ability can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+            <p class="indent">You can use this ability once per long rest.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Heartbeat Monitor" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_HEARTBEAT_MONITOR">
+        <supports>Utility Module</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:2]</requirements>
+        <description>
+            <p><em>Prerequisite: 2nd level</em></p>
+            <p>You have developed sensors that allow you to monitor another creature's heartbeat if it is within your melee range, allowing you to monitor changes in heart frequency.</p>
+            <p class="indent">You gain proficiency in the Insight and Intimidation skills.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+    </element>
+
+    <element name="Gamma-Sensitivity" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_GAMMA_SENSITIVITY">
+        <supports>Utility Module</supports>
+		<prerequisite>6th level, Electro-magnetic Sensitivity, Heartbeat Monitoring</prerequisite>
+		<requirements>[level:6], ID_TAM_CLASS_FEATURE_MECHUTILITY_EM_SENSITIVITY, ID_TAM_CLASS_FEATURE_MECHUTILITY_HEARTBEAT_MONITOR</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level, Electro-magnetic Sensitivity, Heartbeat Monitoring</em></p>
+            <p>By using your action, you are able to see through objects up to 30 ft away for 10 minutes.</p>
+            <p class="indent">Your view is obstructed by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+            <p class="indent">This can also be used to see weaknesses or secret doors in walls, objects hidden by creatures and even into the creatures' bodies (including heart rate, muscle movements, breathing and blood circulation in their brains).</p>
+            <p class="indent">This can be used once per long rest.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Observation" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_OBSERVATION">
+        <supports>Utility Module</supports>
+		<prerequisite>4th level</prerequisite>
+		<requirements>[level:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p>You have gotten a highly magnifying spyglass, granting you proficiency in the Perception skill.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+
+    <element name="Spare Parts" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_SPARE_PARTS">
+        <supports>Utility Module</supports>
+		<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 1st level</em></p>
+            <p>You always have some spare parts around to repair your mech with.</p>
+            <p class="indent">While resting you may restore two hit dice to your mech instead of one. Alternatively, you and your mech may both restore hit points equal to each one of your hit dice.</p>
+            <p class="indent">To build a new mech, you only need four fifth of the needed iron.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Heating Mat" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_HEATING_MAT">
+        <supports>Utility Module</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:2]</requirements>
+        <description>
+            <p><em>Prerequisite: 2nd level</em></p>
+            <p>Since your mech produces a lot of excess heat, you were able to trap a little of it in heating mat, which can also be carried. This grants you resistance to cold, even when outside your mech.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+
+    <element name="Lead Shielding" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_LEAD_SHIELDING">
+        <supports>Utility Module</supports>
+		<prerequisite>4th level</prerequisite>
+		<requirements>[level:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p>Your mech's cockpit is protected by a thin sheet of lead, making you undetectable by magical means (e.g. Detect Thoughts).</p>
+            <p class="indent">To rebuild your mech, an additional pound of lead is needed each time.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Auto-Stabilize" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_AUTO_STABILIZE">
+        <supports>Utility Module</supports>
+		<prerequisite>4th level</prerequisite>
+		<requirements>[level:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p>If you are in your mech and your hit points become reduced to zero, it instantly stabilizes you and blocks possibly incoming attacks by using all available shields and the block action every turn.</p>
+            <p class="indent">This feature can only be used once per long rest.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Remote Control Mech" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_REMOTE_CONTROL">
+        <supports>Utility Module</supports>
+		<prerequisite>4th level</prerequisite>
+		<requirements>[level:4]</requirements>
+        <description>
+            <p><em>Prerequisite: 4th level</em></p>
+            <p>You may remote control your mech as long as it is not further away from you than 300 ft and the view is not obstructed.</p>
+            <p class="indent">While controlling your mech remotely, it is considered piloted by you. All features that require you to pilot it can be used while remote controlling.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Sentry Mode" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_SENTRY_MODE">
+        <supports>Utility Module</supports>
+		<prerequisite>8th level</prerequisite>
+		<requirements>[level:8]</requirements>
+        <description>
+            <p><em>Prerequisite: 8th level</em></p>
+            <p>Your mech may alarm everyone with loud noises when an unknown creature is closer than 10ft to it. This also works on hardly detectable creatures and when the mech is not piloted. If needed, the alarmed, unpiloted mech can defend itself with melee attacks if it should get attacked or someone tried to break into it.</p>
+            <p class="indent">Your mech's passive perception is equal to 10 + your Intelligence modifier.</p>
+       </description>
+        <sheet>
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Reassembly" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_REASSEMBLY">
+        <supports>Utility Module</supports>
+		<prerequisite>8th level</prerequisite>
+		<requirements>[level:8]</requirements>
+        <description>
+            <p><em>Prerequisite: 8th level</em></p>
+            <p>You may, as an action, command your destroyed mech to reassamble into a functioning mech. It picks up all parts that are not further away from the centerpiece as one foot. It gains hit points equal to 1d6 + your Intelligence modifier.</p>
+            <p class="indent">This feature can only be used once per long rest.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Thrusters" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_THRUSTERS">
+        <supports>Utility Module</supports>
+		<prerequisite>6th level</prerequisite>
+		<requirements>[level:6]</requirements>
+        <description>
+            <p><em>Prerequisite: 6th level</em></p>
+            <p>Your mech gains two thrusters allowing you to dash, as a bonus action, to a target location up to (1 + your Dexterity modifier) x 10 ft away. Each creature hit by the dash travels with it. When hitting a wall, each hit creature take fall damage according to the distance they moved this way.</p>
+            <p class="indent">The thrusters can be used once per turn and once per long rest. The number of uses increases by one at levels 11 and 17.</p>
+       </description>
+        <sheet action="Action" usage="{{mech thrusters:usage}}/Long Rest">
+            <description>{{mech thrusters:distance}}</description>
+        </sheet>
+        <rules>
+			<stat name="mech thrusters:usage" value="1" />
+			<stat name="mech thrusters:usage" value="1" level="11" />
+			<stat name="mech thrusters:usage" value="1" level="17" />
+			<stat name="mech thrusters:distance" value="1" />
+			<stat name="mech thrusters:distance" value="dexterity:modifier" />
+        </rules>
+    </element>
+
+    <element name="Summon Mech" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_SUMMON_MECH">
+        <supports>Utility Module</supports>
+		<prerequisite>10th level</prerequisite>
+		<requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p>As long as you are on the same plane of existence as your mech, you may, as an action, call it to your position from any distance. It moves to your position as quickly as possible. If its path is obstructed, it will try to find a way around the obstruction. If the obstruction is unavoidable, it will try to break through it by any means. If this still is not possible, it will stay in front of the obstruction.</p>
+       </description>
+        <sheet action="Action">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Flight" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_FLIGHT">
+        <supports>Utility Module</supports>
+		<prerequisite>10th level</prerequisite>
+		<requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p>You discovered a way to develop vertical thrusters that allow your mech to soar through the air. As an action, your mech lifts off the ground and flies at any height for ten minutes. The mech's flying speed is double its walking speed.</p>
+            <p class="indent">When the time of flight runs out, the mech will fall immediatly.</p>
+            <p class="indent">This can be used once per long rest.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Interplanar Travel" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_INTERPLANAR_TRAVEL">
+        <supports>Utility Module</supports>
+		<prerequisite>18th level</prerequisite>
+		<requirements>[level:18]</requirements>
+        <description>
+            <p><em>Prerequisite: 18th level</em></p>
+            <p>Your mech may, as an action jump between different planes of existence. Everything touching the mech is teleported with it. The places the mech can jump to, have to be seen by you at least once. The distance the mech can travel this way is not limited.</p>
+            <p class="indent">This feature can be used twice every long rest.</p>
+       </description>
+        <sheet action="Action" usage="2/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+    <element name="Mind Control" type="Class Feature" source="Titans and Mortals" id="ID_TAM_CLASS_FEATURE_MECHUTILITY_INTERPLANAR_TRAVEL">
+        <supports>Utility Module</supports>
+		<prerequisite>20th level</prerequisite>
+		<requirements>[level:20]</requirements>
+        <description>
+            <p><em>Prerequisite: 20th level</em></p>
+            <p>While your mech is on the same plane of existence as you, you may use your action to try to control any creature within 10 feet away from your mech. This creature has to succeed on a Wisdom saving throw or is under your complete control until this mech gets destroyed or you release Mind Control.</p>
+            <p class="indent">Only one creature can be controlled at a time by one mech. It can only be recast after releasing it or with another mech.</p>
+            <p class="indent">Before being able to recast it, you have perform a long rest.</p>
+            <p class="indent">While controlling, you can decide which memories that creature can keep and which will be overridden by a memory you can make up.</p>
+       </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>description</description>
+        </sheet>
+    </element>
+
+</elements>

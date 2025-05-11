@@ -162,9 +162,60 @@
             </center>
         </description>
         <sheet>
-            <description>description</description>
+            <description>The mech has {{mech:hp}}hp, Your mech suit is treated as a piece of heavy armor, granting you 14 AC while piloting it. Its AC cannot be raised by the armor you are wearing. To get into your mech, you may spend your movement to get to and into it and your action to get set up and ready. Completely erected, your mech is 3 feet taller and up to 2 feet wider than you. Its weight is three times as much as yours. Since it's powered, your mech's weight does not count towards your encumbrance. Your mech has a base movement of 30. While piloting it, you may add your Intelligence modifier to Strength checks instead of your Strength modifier. Your mech has separate hit points. While piloting it, it takes damage instead of you (except cold, necrotic, poison and psychic. This damage is dealt to you directly). When its hit points reach 0, it can no longer be used until it is repaired. If damage exceeds the mech's current hit points, you take the remaining damage. Should your mech be destroyed completely (fallen down a cliff or similar), you can build a new mech within two days. The iron needed for this is equal to your Mech Pilot level times ten. The time needed to build a new mech can be reduced by half for every creature helping you. All mechs have the same modules and properties. While resting, you may use one of your hit dice to repair your mech regaining it 1d6 + your Intelligence modifier hit points, resulting in you not healing because of the exhaustion. Repairing your mech counts as light activity for you, allowing you to keep an eye out for others. When your mech is repaired by magical means (such as mending), consume one hit dice to have it gain that many hit points.The mech is equipped with ranged and melee primary weapons. These can be exchanged as any other weapon.
+
+                The mech has two arms, each mounted with on-board primary weapons, so Two-Weapon-Fighting is possible beginning at level 1.
+                
+                Your mech's melee attacks deal bludgeoning damage and its ranged attacks deal piercing damage. Its damage is equal to 1d6 + your Dexterity modifier.
+                
+                To perform a ranged attack however, you have to be anchored to the ground, allowing you to withstand the immense knockback but also renders you immobile. You can engage or disengage these anchors as a bonus action each turn.
+                
+                While anchored, your mech has disadvantage on Dexterity saving throws and it is resistant to abilities that cause it to move.
+                
+                (Range: 80/320)</description>
         </sheet>
         <rules>
+            <stat name="mech:hp" value="6" />
+            <stat name="mech:hp" value="4" level="2"/>
+            <stat name="mech:hp" value="4" level="3"/>
+            <stat name="mech:hp" value="4" level="4"/>
+            <stat name="mech:hp" value="4" level="5"/>
+            <stat name="mech:hp" value="4" level="6"/>
+            <stat name="mech:hp" value="4" level="7"/>
+            <stat name="mech:hp" value="4" level="8"/>
+            <stat name="mech:hp" value="4" level="9"/>
+            <stat name="mech:hp" value="4" level="10"/>
+            <stat name="mech:hp" value="4" level="11"/>
+            <stat name="mech:hp" value="4" level="12"/>
+            <stat name="mech:hp" value="4" level="13"/>
+            <stat name="mech:hp" value="4" level="14"/>
+            <stat name="mech:hp" value="4" level="15"/>
+            <stat name="mech:hp" value="4" level="16"/>
+            <stat name="mech:hp" value="4" level="17"/>
+            <stat name="mech:hp" value="4" level="18"/>
+            <stat name="mech:hp" value="4" level="19"/>
+            <stat name="mech:hp" value="4" level="20"/>
+            
+            <stat name="mech:hp" value="intelligence:modifier" />
+            <stat name="mech:hp" value="intelligence:modifier" level="2"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="3"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="4"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="5"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="6"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="7"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="8"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="9"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="10"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="11"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="12"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="13"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="14"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="15"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="16"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="17"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="18"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="19"/>
+            <stat name="mech:hp" value="intelligence:modifier" level="20"/>
         </rules>
 
     </element>
